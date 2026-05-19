@@ -1,0 +1,6 @@
+high_risk: 70
+emergency_override: 85
+stockout_probability_limit: 0.25
+# Used only by Monte Carlo "dual_source" strategy (hypothetical equal split for simulation).
+# Part recommendations use dynamic allocation in backend/analytics/allocation.py — not this ratio.
+dual_source_split: [0.6, 0.4]

@@ -1,0 +1,151 @@
+# Disruption scenarios for SimPy supply simulation (demo)
+scenarios:
+  - id: BASELINE
+    name: Baseline
+    description: Normal operating conditions — no external shock
+    severity: low
+    category: baseline
+    duration_days: 90
+    shock: {}
+
+  - id: ME-GULF-TIRE
+    name: Middle East / Gulf tyre supply shock
+    description: Red Sea & Gulf petrochemical disruption — synthetic rubber, carbon black, MRF OEM tyre programmes
+    severity: critical
+    category: geopolitical
+    duration_days: 50
+    shock:
+      commodity: rubber
+      lead_time_multiplier: 2.25
+      capacity_factor: 0.68
+      demand_spike: 1.08
+      countries: [AE, SA]
+
+  - id: RUBBER-SHOCK
+    name: Rubber supply disruption
+    description: Southeast Asia rubber export delay — tires, seals, wiper rubber
+    severity: high
+    category: commodity
+    duration_days: 45
+    shock:
+      commodity: rubber
+      lead_time_multiplier: 1.8
+      capacity_factor: 0.75
+      demand_spike: 1.1
+      countries: [TH, MY]
+
+  - id: CHIP-SHORTAGE
+    name: Semiconductor shortage
+    description: MCU/sensor allocation cut — ECU, infotainment, ADAS
+    severity: critical
+    category: commodity
+    duration_days: 60
+    shock:
+      commodity: semiconductors
+      capacity_factor: 0.65
+      lead_time_multiplier: 1.4
+      demand_spike: 1.05
+      countries: [JP, IN, KR]
+
+  - id: EU-LOGISTICS
+    name: EU logistics strike
+    description: Port and rail delays affecting EU metal stampings
+    severity: medium
+    category: logistics
+    duration_days: 21
+    shock:
+      countries: [DE]
+      lead_time_multiplier: 1.5
+      capacity_factor: 0.85
+
+  - id: INR-DEPRECIATION
+    name: INR volatility & import cost
+    description: Rupee weakness vs JPY/EUR — royalties and CKD kits
+    severity: medium
+    category: macro
+    duration_days: 90
+    shock:
+      countries: [JP, DE]
+      lead_time_multiplier: 1.2
+      cost_pressure: 1.15
+      capacity_factor: 0.95
+
+  - id: MONSOON-NCR
+    name: North India monsoon flooding
+    description: Gurgaon–Manesar corridor logistics slowdown
+    severity: high
+    category: logistics
+    duration_days: 30
+    shock:
+      countries: [IN]
+      lead_time_multiplier: 1.65
+      capacity_factor: 0.8
+      demand_spike: 1.0
+
+  - id: STEEL-SPIKE
+    name: Steel & aluminium price spike
+    description: Commodity surge compresses stamping margin and MOQ
+    severity: medium
+    category: commodity
+    duration_days: 60
+    shock:
+      commodity: metals
+      capacity_factor: 0.88
+      cost_pressure: 1.2
+      lead_time_multiplier: 1.15
+
+  - id: BATTERY-CELL-ALLOC
+    name: EV battery cell allocation
+    description: Traction cell priority to export OEMs — HV pack delay
+    severity: high
+    category: commodity
+    duration_days: 50
+    shock:
+      commodity: batteries
+      capacity_factor: 0.6
+      lead_time_multiplier: 1.7
+      countries: [IN, KR]
+
+  - id: LABOR-UNREST
+    name: Tier-2 labor unrest (India)
+    description: Short strike at plastics and wiring sub-tier
+    severity: medium
+    category: operational
+    duration_days: 14
+    shock:
+      countries: [IN]
+      capacity_factor: 0.7
+      lead_time_multiplier: 1.3
+
+  - id: GEOPOLITICAL-ASEAN
+    name: ASEAN trade lane disruption
+    description: Shipping reroute — Thailand/Malaysia rubber and electronics
+    severity: high
+    category: geopolitical
+    duration_days: 40
+    shock:
+      countries: [TH, MY]
+      lead_time_multiplier: 2.0
+      capacity_factor: 0.72
+
+  - id: LAUNCH-SURGE
+    name: New SUV launch demand surge
+    description: Spike in parts demand for new model ramp
+    severity: medium
+    category: demand
+    duration_days: 35
+    shock:
+      demand_spike: 1.45
+      capacity_factor: 0.9
+      lead_time_multiplier: 1.1
+
+  - id: CYBER-SUPPLIER
+    name: Supplier IT / OT cyber incident
+    description: EDI and ASN freeze at major Tier-1 — scheduling blind
+    severity: high
+    category: operational
+    duration_days: 10
+    shock:
+      lead_time_multiplier: 1.25
+      capacity_factor: 0.55
+      demand_spike: 1.0

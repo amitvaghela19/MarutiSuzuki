@@ -1,0 +1,966 @@
+parts:
+- id: PART-STEERING-RACK
+  name: Electric power steering rack
+  category: chassis
+  vehicle_system: steering
+  criticality: 5
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-JP-PARTS
+  - SUP-IN-BEARINGS
+  alternative_solutions:
+  - Qualify SUP-JP-PARTS as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 5 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-STEERING-COL
+  name: Steering column & intermediate shaft
+  category: chassis
+  vehicle_system: steering
+  criticality: 4
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-STEEL
+  supplier_ids:
+  - SUP-IN-STEEL
+  - SUP-IN-FORGING
+  alternative_solutions:
+  - Qualify SUP-IN-FORGING as overflow when SUP-IN-STEEL risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-AIRBAG-ECU
+  name: Airbag control unit & sensors
+  category: safety
+  vehicle_system: passive_safety
+  criticality: 5
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-JP-PARTS
+  - SUP-KR-SEMI
+  alternative_solutions:
+  - Qualify SUP-JP-PARTS as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 5 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-AIRBAG-MOD
+  name: Driver & passenger airbag modules
+  category: safety
+  vehicle_system: passive_safety
+  criticality: 5
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-STAMPING
+  supplier_ids:
+  - SUP-IN-STAMPING
+  - SUP-JP-PARTS
+  alternative_solutions:
+  - Qualify SUP-JP-PARTS as overflow when SUP-IN-STAMPING risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 5 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-SEATBELT
+  name: Seat belt retractor & buckle set
+  category: safety
+  vehicle_system: passive_safety
+  criticality: 4
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-FASTENERS
+  supplier_ids:
+  - SUP-IN-FASTENERS
+  - SUP-IN-SEATING
+  alternative_solutions:
+  - Qualify SUP-IN-SEATING as overflow when SUP-IN-FASTENERS risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-ABS-MOD
+  name: ABS / ESC hydraulic control module
+  category: braking
+  vehicle_system: chassis_brakes
+  criticality: 5
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-JP-PARTS
+  - SUP-IN-FRICTION
+  alternative_solutions:
+  - Qualify SUP-JP-PARTS as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 5 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-EPB
+  name: Electric parking brake actuator
+  category: braking
+  vehicle_system: chassis_brakes
+  criticality: 4
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-FRICTION
+  supplier_ids:
+  - SUP-IN-FRICTION
+  - SUP-IN-ELEC
+  alternative_solutions:
+  - Qualify SUP-IN-ELEC as overflow when SUP-IN-FRICTION risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-TURBO
+  name: Turbocharger assembly (boosted petrol)
+  category: powertrain
+  vehicle_system: engine
+  criticality: 4
+  main_commodity: metals
+  primary_supplier_id: SUP-JP-POWERTRAIN
+  supplier_ids:
+  - SUP-JP-POWERTRAIN
+  - SUP-IN-EXHAUST
+  - SUP-IN-FORGING
+  alternative_solutions:
+  - Qualify SUP-IN-EXHAUST as overflow when SUP-JP-POWERTRAIN risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-INTERCOOLER
+  name: Charge air cooler (intercooler)
+  category: powertrain
+  vehicle_system: engine
+  criticality: 3
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-EXHAUST
+  supplier_ids:
+  - SUP-IN-EXHAUST
+  - SUP-IN-STAMPING
+  alternative_solutions:
+  - Qualify SUP-IN-STAMPING as overflow when SUP-IN-EXHAUST risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-TIMING-BELT
+  name: Timing belt / chain kit
+  category: powertrain
+  vehicle_system: engine
+  criticality: 5
+  main_commodity: rubber
+  primary_supplier_id: SUP-IN-CLUTCH
+  supplier_ids:
+  - SUP-IN-CLUTCH
+  - SUP-JP-POWERTRAIN
+  - SUP-TH-RUBBER
+  alternative_solutions:
+  - Qualify SUP-JP-POWERTRAIN as overflow when SUP-IN-CLUTCH risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 5 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-OIL-PUMP
+  name: Engine oil pump module
+  category: powertrain
+  vehicle_system: engine
+  criticality: 4
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-POWERTRAIN
+  supplier_ids:
+  - SUP-IN-POWERTRAIN
+  - SUP-IN-FORGING
+  alternative_solutions:
+  - Qualify SUP-IN-FORGING as overflow when SUP-IN-POWERTRAIN risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-WATER-PUMP
+  name: Coolant water pump
+  category: powertrain
+  vehicle_system: engine
+  criticality: 4
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-POWERTRAIN
+  supplier_ids:
+  - SUP-IN-POWERTRAIN
+  - SUP-IN-HOSE
+  alternative_solutions:
+  - Qualify SUP-IN-HOSE as overflow when SUP-IN-POWERTRAIN risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-RADIATOR
+  name: Aluminium radiator core & tanks
+  category: powertrain
+  vehicle_system: thermal
+  criticality: 4
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-CASTING
+  supplier_ids:
+  - SUP-IN-CASTING
+  - SUP-IN-HOSE
+  - SUP-IN-AC
+  alternative_solutions:
+  - Qualify SUP-IN-HOSE as overflow when SUP-IN-CASTING risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-COOLING-FAN
+  name: Radiator cooling fan & shroud
+  category: powertrain
+  vehicle_system: thermal
+  criticality: 3
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-IN-STAMPING
+  alternative_solutions:
+  - Qualify SUP-IN-STAMPING as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-CATALYST
+  name: Catalytic converter & substrate
+  category: powertrain
+  vehicle_system: emissions
+  criticality: 5
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-EXHAUST
+  supplier_ids:
+  - SUP-IN-EXHAUST
+  - SUP-JP-PARTS
+  alternative_solutions:
+  - Qualify SUP-JP-PARTS as overflow when SUP-IN-EXHAUST risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 5 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-MUFFLER
+  name: Exhaust muffler & tailpipe
+  category: powertrain
+  vehicle_system: emissions
+  criticality: 3
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-EXHAUST
+  supplier_ids:
+  - SUP-IN-EXHAUST
+  - SUP-IN-STEEL
+  alternative_solutions:
+  - Qualify SUP-IN-STEEL as overflow when SUP-IN-EXHAUST risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-FUEL-PUMP
+  name: In-tank electric fuel pump module
+  category: powertrain
+  vehicle_system: engine
+  criticality: 4
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-IN-FILTERS
+  alternative_solutions:
+  - Qualify SUP-IN-FILTERS as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-THROTTLE
+  name: Electronic throttle body
+  category: powertrain
+  vehicle_system: engine
+  criticality: 4
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-JP-PARTS
+  alternative_solutions:
+  - Qualify SUP-JP-PARTS as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-ALTERNATOR
+  name: Alternator 12V
+  category: electrical
+  vehicle_system: electrical
+  criticality: 4
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-IN-BATTERY
+  alternative_solutions:
+  - Qualify SUP-IN-BATTERY as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-STARTER
+  name: Starter motor
+  category: electrical
+  vehicle_system: electrical
+  criticality: 4
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-IN-POWERTRAIN
+  alternative_solutions:
+  - Qualify SUP-IN-POWERTRAIN as overflow when SUP-IN-ELEC risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-DRIVESHAFT
+  name: Propshaft & CV joint assembly
+  category: powertrain
+  vehicle_system: transmission
+  criticality: 4
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-FORGING
+  supplier_ids:
+  - SUP-IN-FORGING
+  - SUP-IN-POWERTRAIN
+  alternative_solutions:
+  - Qualify SUP-IN-POWERTRAIN as overflow when SUP-IN-FORGING risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-DIFF
+  name: Differential & axle shaft
+  category: powertrain
+  vehicle_system: transmission
+  criticality: 5
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-POWERTRAIN
+  supplier_ids:
+  - SUP-IN-POWERTRAIN
+  - SUP-IN-FORGING
+  - SUP-IN-BEARINGS
+  alternative_solutions:
+  - Qualify SUP-IN-FORGING as overflow when SUP-IN-POWERTRAIN risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 5 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-HUB-ASSY
+  name: Wheel hub & bearing assembly
+  category: chassis
+  vehicle_system: wheels_tires
+  criticality: 4
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-BEARINGS
+  supplier_ids:
+  - SUP-IN-BEARINGS
+  - SUP-IN-STEEL
+  alternative_solutions:
+  - Qualify SUP-IN-STEEL as overflow when SUP-IN-BEARINGS risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-EV-MOTOR
+  name: Traction electric motor
+  category: electrical
+  vehicle_system: ev_powertrain
+  criticality: 5
+  main_commodity: electronics
+  primary_supplier_id: SUP-KR-SEMI
+  supplier_ids:
+  - SUP-KR-SEMI
+  - SUP-IN-EV-HARNESS
+  - SUP-JP-POWERTRAIN
+  alternative_solutions:
+  - Qualify SUP-IN-EV-HARNESS as overflow when SUP-KR-SEMI risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 5 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-EV-INVERTER
+  name: Power inverter module
+  category: electrical
+  vehicle_system: ev_powertrain
+  criticality: 5
+  main_commodity: semiconductors
+  primary_supplier_id: SUP-KR-SEMI
+  supplier_ids:
+  - SUP-KR-SEMI
+  - SUP-IN-ELEC
+  alternative_solutions:
+  - Qualify SUP-IN-ELEC as overflow when SUP-KR-SEMI risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 5 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-EV-OBC
+  name: On-board charger (OBC)
+  category: electrical
+  vehicle_system: ev_powertrain
+  criticality: 5
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-EV-HARNESS
+  supplier_ids:
+  - SUP-IN-EV-HARNESS
+  - SUP-KR-SEMI
+  alternative_solutions:
+  - Qualify SUP-KR-SEMI as overflow when SUP-IN-EV-HARNESS risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 5 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-EV-DCDC
+  name: DC-DC converter (12V auxiliary)
+  category: electrical
+  vehicle_system: ev_powertrain
+  criticality: 4
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-EV-HARNESS
+  supplier_ids:
+  - SUP-IN-EV-HARNESS
+  - SUP-IN-ELEC
+  alternative_solutions:
+  - Qualify SUP-IN-ELEC as overflow when SUP-IN-EV-HARNESS risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-BMS
+  name: Battery management system (BMS)
+  category: electrical
+  vehicle_system: ev_powertrain
+  criticality: 5
+  main_commodity: semiconductors
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-KR-SEMI
+  - SUP-IN-BATTERY
+  alternative_solutions:
+  - Qualify SUP-KR-SEMI as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 5 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-WINDSHIELD
+  name: Laminated windshield glass
+  category: body
+  vehicle_system: body_glass
+  criticality: 4
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-GLASS
+  supplier_ids:
+  - SUP-IN-GLASS
+  - SUP-TH-RUBBER
+  alternative_solutions:
+  - Qualify SUP-TH-RUBBER as overflow when SUP-IN-GLASS risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-SIDE-GLASS
+  name: Door & quarter glass set
+  category: body
+  vehicle_system: body_glass
+  criticality: 3
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-GLASS
+  supplier_ids:
+  - SUP-IN-GLASS
+  alternative_solutions:
+  - Qualify SUP-IN-GLASS as overflow when SUP-IN-GLASS risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-MIRROR
+  name: Power ORVM assembly
+  category: body
+  vehicle_system: body_exterior
+  criticality: 3
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-LIGHTING
+  supplier_ids:
+  - SUP-IN-LIGHTING
+  - SUP-IN-ELEC
+  - SUP-IN-GLASS
+  alternative_solutions:
+  - Qualify SUP-IN-ELEC as overflow when SUP-IN-LIGHTING risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-BUMPER-F
+  name: Front bumper fascia & absorber
+  category: body
+  vehicle_system: body_exterior
+  criticality: 3
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-PLASTICS
+  supplier_ids:
+  - SUP-IN-PLASTICS
+  - SUP-IN-STAMPING
+  alternative_solutions:
+  - Qualify SUP-IN-STAMPING as overflow when SUP-IN-PLASTICS risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-BUMPER-R
+  name: Rear bumper fascia
+  category: body
+  vehicle_system: body_exterior
+  criticality: 3
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-PLASTICS
+  supplier_ids:
+  - SUP-IN-PLASTICS
+  alternative_solutions:
+  - Qualify SUP-IN-PLASTICS as overflow when SUP-IN-PLASTICS risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-HOOD
+  name: Bonnet (hood) panel
+  category: body
+  vehicle_system: body_structure
+  criticality: 3
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-STEEL
+  supplier_ids:
+  - SUP-IN-STEEL
+  - SUP-IN-STAMPING
+  alternative_solutions:
+  - Qualify SUP-IN-STAMPING as overflow when SUP-IN-STEEL risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-DOOR-OUTER
+  name: Door outer panel (stamped)
+  category: body
+  vehicle_system: body_structure
+  criticality: 3
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-STAMPING
+  supplier_ids:
+  - SUP-IN-STAMPING
+  - SUP-IN-STEEL
+  alternative_solutions:
+  - Qualify SUP-IN-STEEL as overflow when SUP-IN-STAMPING risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-FUEL-TANK
+  name: Plastic fuel tank module
+  category: body
+  vehicle_system: fuel_system
+  criticality: 4
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-PLASTICS
+  supplier_ids:
+  - SUP-IN-PLASTICS
+  - SUP-IN-HOSE
+  alternative_solutions:
+  - Qualify SUP-IN-HOSE as overflow when SUP-IN-PLASTICS risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-SUNROOF-ASSY
+  name: Panoramic sunroof assembly
+  category: body
+  vehicle_system: body_exterior
+  criticality: 3
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-SUNROOF
+  supplier_ids:
+  - SUP-IN-SUNROOF
+  - SUP-IN-GLASS
+  alternative_solutions:
+  - Qualify SUP-IN-GLASS as overflow when SUP-IN-SUNROOF risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-HEADLAMP
+  name: LED headlamp unit
+  category: electrical
+  vehicle_system: lighting
+  criticality: 4
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-LIGHTING
+  supplier_ids:
+  - SUP-IN-LIGHTING
+  - SUP-KR-SEMI
+  - SUP-IN-ELEC
+  alternative_solutions:
+  - Qualify SUP-KR-SEMI as overflow when SUP-IN-LIGHTING risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-TAILLAMP
+  name: LED tail lamp cluster
+  category: electrical
+  vehicle_system: lighting
+  criticality: 3
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-LIGHTING
+  supplier_ids:
+  - SUP-IN-LIGHTING
+  alternative_solutions:
+  - Qualify SUP-IN-LIGHTING as overflow when SUP-IN-LIGHTING risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-FOG-LAMP
+  name: Fog lamp & DRL module
+  category: electrical
+  vehicle_system: lighting
+  criticality: 2
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-LIGHTING
+  supplier_ids:
+  - SUP-IN-LIGHTING
+  alternative_solutions:
+  - Qualify SUP-IN-LIGHTING as overflow when SUP-IN-LIGHTING risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 2 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-TPMS
+  name: Tyre pressure monitoring sensors
+  category: electrical
+  vehicle_system: adas
+  criticality: 3
+  main_commodity: semiconductors
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-JP-PARTS
+  alternative_solutions:
+  - Qualify SUP-JP-PARTS as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-PARK-SENSOR
+  name: Ultrasonic parking sensors
+  category: electrical
+  vehicle_system: adas
+  criticality: 3
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-JP-PARTS
+  alternative_solutions:
+  - Qualify SUP-JP-PARTS as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-REAR-CAM
+  name: Rear view camera module
+  category: electrical
+  vehicle_system: adas
+  criticality: 3
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-KR-SEMI
+  alternative_solutions:
+  - Qualify SUP-KR-SEMI as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-CLUSTER
+  name: Digital instrument cluster
+  category: electrical
+  vehicle_system: cockpit
+  criticality: 4
+  main_commodity: semiconductors
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-KR-SEMI
+  alternative_solutions:
+  - Qualify SUP-KR-SEMI as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-TELEMATICS
+  name: Telematics control unit (TCU)
+  category: electrical
+  vehicle_system: connectivity
+  criticality: 4
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-KR-SEMI
+  alternative_solutions:
+  - Qualify SUP-KR-SEMI as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-SEAT-FRONT
+  name: Front seat frame & trim
+  category: comfort
+  vehicle_system: interior
+  criticality: 3
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-SEATING
+  supplier_ids:
+  - SUP-IN-SEATING
+  - SUP-IN-STAMPING
+  alternative_solutions:
+  - Qualify SUP-IN-STAMPING as overflow when SUP-IN-SEATING risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-SEAT-REAR
+  name: Rear seat assembly
+  category: comfort
+  vehicle_system: interior
+  criticality: 2
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-SEATING
+  supplier_ids:
+  - SUP-IN-SEATING
+  alternative_solutions:
+  - Qualify SUP-IN-SEATING as overflow when SUP-IN-SEATING risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 2 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-STEERING-WHL
+  name: Steering wheel & airbag cover
+  category: comfort
+  vehicle_system: cockpit
+  criticality: 3
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-STAMPING
+  supplier_ids:
+  - SUP-IN-STAMPING
+  - SUP-IN-SEATING
+  alternative_solutions:
+  - Qualify SUP-IN-SEATING as overflow when SUP-IN-STAMPING risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-AC-COMP
+  name: AC compressor & condenser
+  category: comfort
+  vehicle_system: thermal
+  criticality: 4
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-AC
+  supplier_ids:
+  - SUP-IN-AC
+  - SUP-IN-ELEC
+  - SUP-IN-HOSE
+  alternative_solutions:
+  - Qualify SUP-IN-ELEC as overflow when SUP-IN-AC risk exceeds threshold (split %
+    from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-CABIN-FILTER
+  name: Cabin air filter element
+  category: comfort
+  vehicle_system: thermal
+  criticality: 2
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-FILTERS
+  supplier_ids:
+  - SUP-IN-FILTERS
+  - SUP-IN-AC
+  alternative_solutions:
+  - Qualify SUP-IN-AC as overflow when SUP-IN-FILTERS risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 2 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-AIR-FILTER
+  name: Engine air intake filter
+  category: powertrain
+  vehicle_system: engine
+  criticality: 3
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-FILTERS
+  supplier_ids:
+  - SUP-IN-FILTERS
+  - SUP-TH-RUBBER
+  alternative_solutions:
+  - Qualify SUP-TH-RUBBER as overflow when SUP-IN-FILTERS risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-OIL-FILTER
+  name: Engine oil filter cartridge
+  category: powertrain
+  vehicle_system: engine
+  criticality: 3
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-FILTERS
+  supplier_ids:
+  - SUP-IN-FILTERS
+  alternative_solutions:
+  - Qualify SUP-IN-FILTERS as overflow when SUP-IN-FILTERS risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-FUEL-FILTER
+  name: Fuel filter module
+  category: powertrain
+  vehicle_system: engine
+  criticality: 4
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-FILTERS
+  supplier_ids:
+  - SUP-IN-FILTERS
+  - SUP-IN-ELEC
+  alternative_solutions:
+  - Qualify SUP-IN-ELEC as overflow when SUP-IN-FILTERS risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-POWER-WINDOW
+  name: Power window regulator & motor
+  category: body
+  vehicle_system: body_electrical
+  criticality: 3
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-IN-STAMPING
+  alternative_solutions:
+  - Qualify SUP-IN-STAMPING as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-CENTRAL-LOCK
+  name: Central locking & BCM
+  category: electrical
+  vehicle_system: body_electrical
+  criticality: 3
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-IN-WIRING
+  alternative_solutions:
+  - Qualify SUP-IN-WIRING as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-HORN
+  name: Dual-tone horn set
+  category: electrical
+  vehicle_system: body_electrical
+  criticality: 1
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  alternative_solutions:
+  - Qualify SUP-IN-ELEC as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 1 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-SPEAKER
+  name: Door speaker & audio harness
+  category: electrical
+  vehicle_system: cockpit
+  criticality: 2
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-IN-WIRING
+  alternative_solutions:
+  - Qualify SUP-IN-WIRING as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 2 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-KEYFOB
+  name: Smart key & immobilizer
+  category: electrical
+  vehicle_system: security
+  criticality: 3
+  main_commodity: electronics
+  primary_supplier_id: SUP-IN-ELEC
+  supplier_ids:
+  - SUP-IN-ELEC
+  - SUP-JP-PARTS
+  alternative_solutions:
+  - Qualify SUP-JP-PARTS as overflow when SUP-IN-ELEC risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-BRAKE-FLUID
+  name: DOT brake fluid (factory fill)
+  category: braking
+  vehicle_system: chassis_brakes
+  criticality: 3
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-FRICTION
+  supplier_ids:
+  - SUP-IN-FRICTION
+  - SUP-IN-HOSE
+  alternative_solutions:
+  - Qualify SUP-IN-HOSE as overflow when SUP-IN-FRICTION risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-COOLANT
+  name: Long-life engine coolant
+  category: powertrain
+  vehicle_system: thermal
+  criticality: 3
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-HOSE
+  supplier_ids:
+  - SUP-IN-HOSE
+  - SUP-IN-FILTERS
+  alternative_solutions:
+  - Qualify SUP-IN-FILTERS as overflow when SUP-IN-HOSE risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-PAINT-OEM
+  name: OEM base & clear coat system
+  category: body
+  vehicle_system: body_exterior
+  criticality: 3
+  main_commodity: plastics
+  primary_supplier_id: SUP-IN-PAINT
+  supplier_ids:
+  - SUP-IN-PAINT
+  - SUP-DE-METALS
+  alternative_solutions:
+  - Qualify SUP-DE-METALS as overflow when SUP-IN-PAINT risk exceeds threshold (split
+    % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-ADHESIVE
+  name: Structural adhesives & sealants
+  category: body
+  vehicle_system: body_sealing
+  criticality: 3
+  main_commodity: plastics
+  primary_supplier_id: SUP-TH-RUBBER
+  supplier_ids:
+  - SUP-TH-RUBBER
+  - SUP-IN-PLASTICS
+  alternative_solutions:
+  - Qualify SUP-IN-PLASTICS as overflow when SUP-TH-RUBBER risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 3 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-FASTENER-KIT
+  name: Chassis & interior fastener kit
+  category: chassis
+  vehicle_system: body_structure
+  criticality: 2
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-FASTENERS
+  supplier_ids:
+  - SUP-IN-FASTENERS
+  - SUP-IN-STEEL
+  alternative_solutions:
+  - Qualify SUP-IN-STEEL as overflow when SUP-IN-FASTENERS risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 2 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days
+- id: PART-TOOLING-DIE
+  name: Progressive die & tooling (program)
+  category: tooling
+  vehicle_system: manufacturing
+  criticality: 4
+  main_commodity: metals
+  primary_supplier_id: SUP-IN-TOOLING
+  supplier_ids:
+  - SUP-IN-TOOLING
+  - SUP-IN-STAMPING
+  alternative_solutions:
+  - Qualify SUP-IN-STAMPING as overflow when SUP-IN-TOOLING risk exceeds threshold
+    (split % from analysis, not fixed)
+  - Emergency stock build at Manesar/Gurgaon for criticality 4 SKU
+  - Homologation fast-track on ASEAN alternate if India port delays exceed 14 days

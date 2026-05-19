@@ -1,0 +1,9 @@
+disclaimer: >
+  Illustrative digital twin telemetry — synthetic values for UI demo only.
+
+sensor_types:
+  - throughput_units_per_hour
+  - buffer_days_of_supply
+  - oee_pct
+  - quality_ppm
+  - energy_kwh_per_unit

@@ -1,0 +1,24 @@
+criteria:
+  - id: cost
+    name: Unit cost index
+    direction: min
+    weight: 0.25
+  - id: lead_time
+    name: Lead time (days)
+    direction: min
+    weight: 0.20
+  - id: country_risk
+    name: Country risk score
+    direction: min
+    weight: 0.25
+  - id: quality
+    name: Quality capability
+    direction: max
+    weight: 0.15
+  - id: ev_ready
+    name: EV readiness
+    direction: max
+    weight: 0.15
+gates:
+  require_iso9001: true
+  max_lead_time_days: 45

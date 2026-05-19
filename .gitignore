@@ -1,0 +1,16 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+node_modules/
+frontend/dist/
+data/analytics.duckdb
+data/analytics.duckdb.wal
+data/cache/
+data/snapshots/
+!.gitkeep
+debug-*.log

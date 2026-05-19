@@ -1,0 +1,36 @@
+# Public-information synthesis for demo/education — NOT proprietary MSIL data
+company:
+  name: Maruti Suzuki India Limited
+  ticker: NSE MARUTI
+  reference_url: https://www.marutisuzuki.com/
+  tagline: "Way of Life!"
+  parent_group: Suzuki Motor Corporation (Japan)
+  founded: 1981
+  headquarters: New Delhi, India
+  role: India's largest passenger vehicle manufacturer by domestic sales volume (mass-market segment)
+  business_model:
+    - Design and distribute Suzuki-platform passenger vehicles for India
+    - Extensive domestic sales and service network
+    - Localization of powertrain, body, electronics, and trim supply chains
+    - Growing SUV and CNG/powertrain-mix portfolio
+  manufacturing_footprint:
+    - name: Gurgaon & Manesar (Haryana)
+      focus: High-volume hatchbacks and sedans
+    - name: Kharkhoda / Gujarat (expansion)
+      focus: New capacity for SUVs and export-oriented models
+  product_highlights:
+    - Swift, Dzire, Baleno, Fronx
+    - Brezza, Ertiga, Grand Vitara
+    - Jimny, Invicto (select segments)
+  supply_chain_themes:
+    - High dependence on localized Tier-1 for wiring, interiors, and stampings
+    - Semiconductor and sensor content rising with ADAS and infotainment
+    - Rubber and tire sourcing exposed to ASEAN logistics and Gulf / Red Sea feedstock routes (MRF-class OEM partners)
+    - Battery and e-powertrain sourcing strategic for electrification roadmap
+  key_metrics_demo:
+    annual_capacity_approx_mn_units: 2.0
+    domestic_market_position: "#1 passenger vehicles (volume, India — illustrative)"
+    export_markets: [Latin America, Africa, Middle East, ASEAN — selective]
+  disclaimer: >
+    Figures and narratives are illustrative, compiled from publicly known company
+    profile elements for training/demo. They are not live filings or proprietary MSIL data.

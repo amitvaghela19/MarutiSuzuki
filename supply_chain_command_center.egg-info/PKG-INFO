@@ -1,0 +1,221 @@
+Metadata-Version: 2.4
+Name: supply-chain-command-center
+Version: 0.1.0
+Summary: Supply Chain Command Center — demo analytics POC
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi<0.130,>=0.115.0
+Requires-Dist: uvicorn[standard]<0.35,>=0.32.0
+Requires-Dist: httpx<0.29,>=0.27.0
+Requires-Dist: duckdb<1.3,>=1.1.0
+Requires-Dist: pydantic<3,>=2.9.0
+Requires-Dist: pydantic-settings<3,>=2.6.0
+Requires-Dist: pyyaml<7,>=6.0.2
+Requires-Dist: numpy<3,>=2.1.0
+Requires-Dist: simpy<5,>=4.1.0
+Requires-Dist: feedparser<7,>=6.0.11
+Requires-Dist: python-dotenv<2,>=1.0.0
+Requires-Dist: jinja2<4,>=3.1.0
+Provides-Extra: dev
+Requires-Dist: pytest<9,>=8.3.0; extra == "dev"
+Requires-Dist: pytest-asyncio<0.26,>=0.24.0; extra == "dev"
+Requires-Dist: pytest-cov<7,>=6.0.0; extra == "dev"
+Requires-Dist: httpx<0.29,>=0.27.0; extra == "dev"
+Requires-Dist: pip-audit<3,>=2.7.0; extra == "dev"
+
+# Supply Chain Command Center
+
+One-click supply chain risk dashboard (demo POC). Configure suppliers, parts, and scenarios in YAML, then run a full analysis pipeline from the UI or API.
+
+**Demo data only** — synthetic suppliers and parts for illustration, not Maruti Suzuki proprietary information.
+
+## Features
+
+### UI (after **Run analysis**)
+
+| Area | What you get |
+|------|----------------|
+| **Home** | Landing page, quick links, interactive 3D SUV hero (community Vitara Brezza model) |
+| **Command center** | KPIs, ops signals, live news ticker, risks, recommendations — click critical items for **why** details |
+| **AI & twin** | AI model fleet status and digital-twin plant telemetry |
+| **Brief & strategy** | Company profile, SWOT & PESTLE with citations |
+| **Parts catalog** | Full BOM-style list with main supplier and alternates |
+| **Suppliers** | Directory plus sourcing matrix and mitigation playbooks |
+| **Fear & Greed** | Sentiment index (0–100) for MSIL and each supplier |
+| **Scenario lab** | 11 disruption scenarios, 3 strategies, Monte Carlo, matrix view |
+| **Why panel** | TOPSIS ranks and allocation rationale (opens from parts / command center) |
+
+Pipeline: ingest (World Bank, GDELT, RSS, optional FRED) → country/commodity/supplier risk → MCDM (TOPSIS) → SimPy scenarios → recommendations → DuckDB + JSON snapshot.
+
+## Stack
+
+| Layer | Technology |
+|-------|------------|
+| Backend | Python 3.11+, FastAPI, uvicorn |
+| Database | DuckDB (`data/analytics.duckdb`) |
+| Analytics | NumPy, SimPy, rule-based news classification |
+| Frontend | React 18, TypeScript, Vite, Three.js |
+| Data | World Bank & GDELT (no key), RSS; optional FRED / NewsData via `.env` |
+
+## Prerequisites
+
+- Python 3.11+
+- Node.js 20+
+- (Optional) [FRED API key](https://fredaccount.stlouisfed.org/apikeys) for richer commodity series
+
+> **Windows:** `make` is not installed by default. Use **`.\tasks.ps1`** (same targets as `Makefile`). Optional: `winget install GnuWin32.Make` or Git Bash.
+
+## Quick start (Windows / PowerShell)
+
+### 1. Install
+
+```powershell
+cd e:\Amit\MarutiSuzuki
+.\tasks.ps1 install
+.\tasks.ps1 migrate
+```
+
+### 2. Run (two terminals from **repo root**)
+
+```powershell
+# Terminal 1 — API
+.\tasks.ps1 backend
+
+# Terminal 2 — UI
+.\tasks.ps1 frontend
+```
+
+| URL | Service |
+|-----|---------|
+| http://localhost:5173 | React UI |
+| http://127.0.0.1:8000/docs | API (Swagger) |
+
+Open the UI and click **Run analysis**. The first run may take 15–30 seconds while external APIs and caches warm up.
+
+### Troubleshooting (Windows)
+
+| Problem | Fix |
+|---------|-----|
+| `tasks.ps1` not recognized | Run from **repo root** (`e:\Amit\MarutiSuzuki`), not only inside `frontend\`. From `frontend\`, use `.\tasks.ps1 frontend` (forwards to root). |
+| `WinError 10013` / port in use on **8000** | `.\tasks.ps1 backend-stop` then `.\tasks.ps1 backend` |
+| UI port **5173** stuck | `.\tasks.ps1 frontend-stop` then `.\tasks.ps1 frontend` |
+| Change ports | Copy `.env.example` → `.env`, set `API_PORT=8010` and/or `$env:VITE_PORT = 5174` before starting |
+| Backend import errors after edits | Stop backend (`backend-stop`), start again — avoid multiple uvicorn instances |
+
+List all commands: `.\tasks.ps1 help`
+
+### 3. Optional environment
+
+Copy `.env.example` to `.env`:
+
+```env
+API_PORT=8000
+FRED_API_KEY=
+NEWSDATA_API_KEY=
+ENABLE_HF_CLASSIFIER=false
+CONFIG_DIR=config
+DATA_DIR=data
+```
+
+### Manual commands (no tasks.ps1)
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\pip install -e ".[dev]"
+.\.venv\Scripts\python -m backend.db.migrate
+cd frontend; npm install; cd ..
+.\.venv\Scripts\uvicorn backend.main:app --reload --host 127.0.0.1 --port 8000
+# other terminal:
+cd frontend; npm run dev
+```
+
+## Configuration
+
+Business rules live in [`config/`](config/) — edit YAML only for typical tuning:
+
+| File | Contents |
+|------|----------|
+| `suppliers.yaml` | 33+ suppliers with trust tiers and IndiaMART category URLs |
+| `supplier_trust.yaml` | Trust tier definitions |
+| `parts.yaml` / `parts_extra.yaml` | Automotive parts (braking, powertrain, electrical, etc.) |
+| `maruti_company.yaml` | Maruti Suzuki India company brief |
+| `strategic_analysis.yaml` | SWOT & PESTLE for MSIL and partner archetypes |
+| `plants.yaml` | Plant list for digital twin |
+| `mcdm.yaml` | Ranking criteria and weights |
+| `thresholds.yaml` | Risk and dual-source thresholds |
+| `scenarios.yaml` | Disruption shocks for simulation |
+| `data_sources.yaml` | Countries, indicators, GDELT queries, RSS URLs |
+| `news_keywords.yaml` | Rule-based news severity taxonomy |
+
+See [`docs/CONFIG_GUIDE.md`](docs/CONFIG_GUIDE.md) and [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md).
+
+## API
+
+Interactive docs: http://127.0.0.1:8000/docs
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `POST` | `/api/run-analysis` | Run full pipeline; returns snapshot JSON |
+| `GET` | `/api/snapshot/latest` | Latest snapshot (404 if never run) |
+| `GET` | `/api/health/data-sources` | Per-provider ingest health |
+| `GET` | `/api/health` | Liveness |
+| `GET` | `/api/company/profile` | Company brief |
+| `GET` | `/api/company/strategic` | SWOT & PESTLE |
+| `GET` | `/api/parts/catalog` | Parts by category |
+| `GET` | `/api/parts/catalog/enriched` | Parts with post-run risk overlays |
+| `GET` | `/api/sourcing/matrix` | Main supplier, alternates, mitigation |
+| `GET` | `/api/sentiment/fear-greed` | Fear & Greed indices |
+| `GET` | `/api/suppliers/catalog` | Supplier directory |
+| `GET` | `/api/scenarios/catalog` | Scenario catalog metadata |
+
+## Project layout
+
+```
+backend/          # FastAPI, ingestion, analytics, DuckDB
+frontend/         # React UI (frontend/tasks.ps1 forwards to root tasks.ps1)
+config/           # YAML business config
+data/             # DuckDB, cache, snapshots (gitignored)
+e2e/              # Playwright tests
+scripts/          # Security audit, plugin helpers
+tasks.ps1         # Windows task runner
+docs/             # Architecture and config guides
+```
+
+## Tests and quality
+
+Use **`.\tasks.ps1 <target>`** on Windows, or **`make <target>`** if GNU Make is installed.
+
+| Target | What it does |
+|--------|----------------|
+| `.\tasks.ps1 test` | Backend unit + integration tests (`pytest`) |
+| `.\tasks.ps1 test-e2e` | Playwright: UI **Run analysis** flow |
+| `.\tasks.ps1 audit` | `pip-audit` + `npm audit` |
+| `.\tasks.ps1 pins` | Print key dependency versions |
+| `.\tasks.ps1 health` | CLI data-source ingest check |
+| `.\tasks.ps1 plugin-check` | Audit + pins + tests + E2E |
+
+```powershell
+.\tasks.ps1 test
+.\tasks.ps1 help
+```
+
+## Cursor plugins (optional)
+
+**The app does not use Cursor MCP at runtime.**
+
+| IDE plugin | In-repo alternative |
+|------------|---------------------|
+| Sonatype / Aikido | `.\tasks.ps1 audit`, `.\tasks.ps1 pins` |
+| Browse | `.\tasks.ps1 test-e2e` |
+
+Details: [`PLUGIN_SETUP.md`](PLUGIN_SETUP.md)
+
+## Docker (optional)
+
+```powershell
+docker compose up --build
+```
+
+## License
+
+Demo / educational use.

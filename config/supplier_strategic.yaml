@@ -1,0 +1,1884 @@
+disclaimer: Demo SWOT & PESTLE per configured supplier — illustrative synthesis with
+  public reference links.
+suppliers:
+- id: SUP-TH-RUBBER
+  name: Siam Rubber Components (Thailand)
+  country: TH
+  swot:
+    strengths:
+    - text: Established rubber capability for Indian OEM programs
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+    technological:
+    - text: EV-ready tooling for rubber
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.irsg.info/
+      source_label: International Rubber Study Group
+- id: SUP-MY-RUBBER
+  name: Penang Elastomers (Malaysia)
+  country: MY
+  swot:
+    strengths:
+    - text: Established rubber capability for Indian OEM programs
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+    technological:
+    - text: EV-ready tooling for rubber
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.miti.gov.my/
+      source_label: MITI Malaysia
+- id: SUP-JP-PARTS
+  name: Nagoya Tier-1 Precision (Japan)
+  country: JP
+  swot:
+    strengths:
+    - text: Established electronics, metals capability for Indian OEM programs
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    technological:
+    - text: EV-ready tooling for electronics, metals
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+- id: SUP-JP-POWERTRAIN
+  name: Suzuki Powertrain Tech Japan (demo licensor channel)
+  country: JP
+  swot:
+    strengths:
+    - text: Established metals, electronics capability for Indian OEM programs
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    technological:
+    - text: EV-ready tooling for metals, electronics
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.globalsuzuki.com/
+      source_label: Suzuki global
+- id: SUP-DE-METALS
+  name: Rhine Alloy Stamping (Germany)
+  country: DE
+  swot:
+    strengths:
+    - text: Established metals capability for Indian OEM programs
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+    technological:
+    - text: EV-ready tooling for metals
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.vda.de/en
+      source_label: VDA Germany
+- id: SUP-KR-SEMI
+  name: Korea Semiconductor Automotive Module (demo)
+  country: KR
+  swot:
+    strengths:
+    - text: Established semiconductors, electronics capability for Indian OEM programs
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+    technological:
+    - text: EV-ready tooling for semiconductors, electronics
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.semiconductor.org/
+      source_label: SIA semiconductors
+- id: SUP-IN-TIRE
+  name: MRF Tyres India (OEM contract)
+  country: IN
+  swot:
+    strengths:
+    - text: Established rubber, tires capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for rubber, tires
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-ELEC
+  name: Pune Precision Electronics
+  country: IN
+  swot:
+    strengths:
+    - text: Established electronics, semiconductors capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for electronics, semiconductors
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-WIRING
+  name: Motherson-style Wiring Harness India (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established electronics, plastics capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for electronics, plastics
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-POWERTRAIN
+  name: Bharat Forge Powertrain India (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-STEEL
+  name: Gujarat Steel Forming
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-STAMPING
+  name: Haryana Stampings & Interiors
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals, plastics capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals, plastics
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-FRICTION
+  name: Brakes India Friction Materials
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals, rubber capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals, rubber
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-BATTERY
+  name: Amara Raja / Exide-class OEM channel (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established batteries, electronics capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for batteries, electronics
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-GLASS
+  name: Gurugram Automotive Glass & Mirrors (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals, plastics capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals, plastics
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-LIGHTING
+  name: Noida LED Automotive Lighting OEM (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established electronics capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for electronics
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-BEARINGS
+  name: Coimbatore Precision Bearings Hub (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-PLASTICS
+  name: Chennai Injection Moulding Auto Plastics (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established plastics capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for plastics
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-EXHAUST
+  name: Pune Exhaust & Emission Systems (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-FORGING
+  name: Ludhiana Forge & Machining Cluster (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-CASTING
+  name: Sanand Aluminium Die Casting (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-HOSE
+  name: Manesar Fluid Hose & Tube Works (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established rubber, plastics capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for rubber, plastics
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-SEATING
+  name: Hosur Seating Foam & Trim (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established plastics, rubber capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for plastics, rubber
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-AC
+  name: Manesar HVAC & AC Compressor Line (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established electronics, metals capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for electronics, metals
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-RIDE
+  name: Pune Ride Control & Shock Absorbers (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals, rubber capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals, rubber
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-FILTERS
+  name: Faridabad Filtration & Fluids (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established rubber, plastics capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for rubber, plastics
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-CLUTCH
+  name: Aurangabad Clutch & Transmission Parts (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals, rubber capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals, rubber
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-FASTENERS
+  name: Ludhiana Automotive Fasteners OEM (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-PAINT
+  name: Bawal Industrial Paint & Coatings OEM (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established plastics capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for plastics
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-EV-HARNESS
+  name: Bengaluru HV EV Harness & Busbar (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established electronics, metals capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for electronics, metals
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-TOOLING
+  name: Pune Tool & Die OEM Shop (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-LPG-CNG
+  name: Faridabad CNG Kit & Regulator OEM (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established metals, rubber capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for metals, rubber
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+- id: SUP-IN-SUNROOF
+  name: Pune Sunroof & Body Electronics Module (demo)
+  country: IN
+  swot:
+    strengths:
+    - text: Established electronics, plastics capability for Indian OEM programs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: ISO-quality systems and repeatability on volume SKUs
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    weaknesses:
+    - text: Sub-tier visibility and working-capital dependency
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Lead-time stretch during port or monsoon disruptions
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    opportunities:
+    - text: EV / hybrid content growth and export kit opportunities
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: Localization incentives under Make-in-India component schemes
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    threats:
+    - text: Commodity and FX volatility on input materials
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    - text: OEM dual-sourcing mandates reducing sole-source margin
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+  pestle:
+    political:
+    - text: Trade lane stability and import-duty exposure
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    economic:
+    - text: Steel, resin, and energy cost pass-through to MSIL
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    social:
+    - text: Skilled labor availability in manufacturing clusters
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    technological:
+    - text: EV-ready tooling for electronics, plastics
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    legal:
+    - text: AIS / homologation and recall liability clauses
+      source_url: https://www.acma.in/
+      source_label: ACMA India
+    environmental:
+    - text: Scope 3 and recycled-content reporting pressure
+      source_url: https://www.acma.in/
+      source_label: ACMA India

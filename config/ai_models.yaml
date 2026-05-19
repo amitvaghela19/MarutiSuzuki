@@ -1,0 +1,227 @@
+disclaimer: >
+  Synthetic model registry for demo — illustrates how an OEM command center
+  would surface ML/AI capabilities. Not production inference endpoints.
+
+models:
+  - id: gnn-supply-risk
+    name: Graph Neural Supply Risk
+    family: graph_neural_network
+    version: "2.4.1"
+    status: active
+    description: Multi-tier supplier graph with geopolitical edge weights; propagates disruption shocks across BOM.
+    inputs: [supplier_graph, country_risk, commodity_indices, news_embeddings]
+    outputs: [node_risk_score, cascade_probability]
+    latency_ms: 120
+    accuracy_demo: 0.87
+    narrative:
+      headline: "When one supplier stumbles, the graph shows who falls next"
+      lede: >
+        Think of your supply base as a web, not a list. This model maps how trouble
+        at a tier-2 chip vendor or a port closure can ripple through to your tier-1
+        partners and finally to Maruti Suzuki assembly lines.
+      plain_english: >
+        It builds a network of suppliers, countries, and parts, then simulates how
+        a shock in one corner spreads. Edge weights reflect geography, trade exposure,
+        and recent news tone. You get a risk score per node and a sense of cascade
+        probability — who is “next in line” if something breaks.
+      how_it_helps: >
+        Procurement and risk teams see hidden dependencies before a single supplier
+        headline becomes a line stoppage. It complements spreadsheets by answering:
+        “If this plant goes dark, which of our BOM lines are in the blast radius?”
+      watch_for: >
+        Sudden jumps in cascade scores for powertrain or electronics clusters, or
+        when a mid-tier supplier with few alternates moves into the top risk band.
+
+  - id: lstm-demand-forecast
+    name: LSTM Demand Forecaster
+    family: recurrent
+    version: "1.8.0"
+    status: active
+    description: Plant-level weekly demand for top 20 critical parts using historical offtake and seasonality.
+    inputs: [plant_shipments, macro_indicators, festival_calendar]
+    outputs: [demand_p50, demand_p90, horizon_weeks]
+    latency_ms: 85
+    accuracy_demo: 0.82
+    narrative:
+      headline: "Forecasting next month’s parts appetite, plant by plant"
+      lede: >
+        Production planners live and die by the forecast. This recurrent model
+        reads years of shipment history, festival calendars, and macro cues to
+        estimate weekly demand for your most critical components.
+      plain_english: >
+        An LSTM is a pattern-learning engine for time series. It learns seasonality
+        (festive spikes, model-year ramps) and smooth trends, then outputs a likely
+        demand band (median and pessimistic) for the next several weeks per plant.
+      how_it_helps: >
+        Better call-offs to suppliers, fewer emergency air-freight moments, and
+        aligned safety stock at Gurgaon, Manesar, and Gujarat. Finance gets a
+        steadier working-capital story when parts orders match real build plans.
+      watch_for: >
+        Wide gaps between P50 and P90 forecasts — that signals uncertainty worth
+        a human review — or a forecast drift after a major launch or price change.
+
+  - id: transformer-news-nlp
+    name: Transformer News Sentinel
+    family: transformer
+    version: "3.1.2"
+    status: active
+    description: Classifies GDELT/RSS headlines into supply-chain risk themes with severity scoring.
+    inputs: [headlines, entity_linking, supplier_aliases]
+    outputs: [risk_type, severity, affected_entities]
+    latency_ms: 45
+    accuracy_demo: 0.91
+    narrative:
+      headline: "The morning wire, translated for supply-chain duty managers"
+      lede: >
+        Thousands of headlines cross the wire daily. This transformer reads them
+        like an analyst intern who never sleeps — tagging logistics delays,
+        sanctions, labor unrest, and recall risk, then linking names to your
+        supplier master.
+      plain_english: >
+        It classifies each article into risk themes, scores how severe it feels,
+        and matches companies and places to your known suppliers and countries.
+        That feeds the command center ticker and critical signals queue.
+      how_it_helps: >
+        Leaders get a curated pulse instead of raw RSS noise. When GDELT spikes
+        on “port congestion” or “export restriction,” you see it in plain labels
+        with severity, not buried in paragraph text.
+      watch_for: >
+        Clusters of high-severity items on the same theme (e.g. semiconductor
+        export controls) or a burst of headlines tied to a single supplier alias.
+
+  - id: rl-allocation-agent
+    name: RL Dual-Source Allocator
+    family: reinforcement_learning
+    version: "0.9.4"
+    status: training
+    description: Policy gradient agent optimizes split allocation under lead-time and cost constraints.
+    inputs: [part_criticality, supplier_lead_times, inventory_position]
+    outputs: [allocation_weights, expected_stockout]
+    latency_ms: 200
+    accuracy_demo: 0.79
+    narrative:
+      headline: "Teaching a machine to split orders between two trusted suppliers"
+      lede: >
+        Dual sourcing is easy to say and hard to do well. This reinforcement-learning
+        agent is still in training — it experiments with allocation splits that
+        balance cost, lead time, and stockout risk for critical parts.
+      plain_english: >
+        Like learning a game by trial and error, the agent tries allocation policies,
+        sees simulated outcomes (stockouts, cost), and nudges toward better splits.
+        It is not yet fully signed off for autonomous production use in this demo.
+      how_it_helps: >
+        When mature, it could suggest “60/40 between Supplier A and B” with
+        explicit expected stockout — a starting point for category managers before
+        they apply judgment and contract rules.
+      watch_for: >
+        Training status flips to active, rising demo accuracy, and alignment with
+        the TOPSIS engine — big divergences mean human review before any auto-split.
+
+  - id: digital-twin-sim
+    name: Plant Digital Twin Simulator
+    family: discrete_event_simulation
+    version: "1.2.0"
+    status: active
+    description: Discrete-event model of Gurgaon, Manesar, and Gujarat lines with part flow and buffer states.
+    inputs: [plant_config, part_routing, shock_scenarios]
+    outputs: [line_utilization, buffer_days, bottleneck_part]
+    latency_ms: 350
+    accuracy_demo: 0.84
+    narrative:
+      headline: "A virtual factory floor before you change the real one"
+      lede: >
+        Gurgaon, Manesar, and Gujarat lines are modeled as flows of parts, buffers,
+        and stations. Run a shock — slower inbound tires, missing ECUs — and see
+        which line chokes first without stopping physical production.
+      plain_english: >
+        Discrete-event simulation moves virtual parts through routes with realistic
+        timings. Outputs include utilization, days of buffer left, and the bottleneck
+        part ID — the component starving the line.
+      how_it_helps: >
+        Operations tests “what if” before capital spend or overtime calls. Digital
+        twin KPIs on the AI & twin page mirror this engine’s view of plant health.
+      watch_for: >
+        Plants flagged constrained, buffer days under plan, or the same bottleneck
+        part appearing across multiple shock scenarios.
+
+  - id: topsis-mcdm-engine
+    name: TOPSIS + AHP MCDM Engine
+    family: multi_criteria_decision
+    version: "1.0.0"
+    status: active
+    description: Ranks alternate suppliers per part using cost, risk, lead time, and quality criteria.
+    inputs: [supplier_scores, mcdm_weights, part_constraints]
+    outputs: [ranked_suppliers, stability_flag]
+    latency_ms: 15
+    accuracy_demo: 0.95
+    narrative:
+      headline: "Ranking alternates when spreadsheets argue and gut feel disagrees"
+      lede: >
+        For each critical part, this engine scores every qualified supplier on cost,
+        risk, lead time, and quality — then ranks them using TOPSIS with weights
+        from AHP workshops. Fast, explainable, and built for sourcing committees.
+      plain_english: >
+        TOPSIS finds who is closest to the “ideal” supplier profile; AHP sets how
+        much weight cost vs risk deserves. You get an ordered list plus flags when
+        the top two choices are nearly tied (unstable decision).
+      how_it_helps: >
+        Drives the allocation recommendations on the Parts catalog and Why panel.
+        Buyers defend choices with criteria weights, not only last year’s habit.
+      watch_for: >
+        Stability flags on high-criticality parts, or a #1 rank that conflicts with
+        the Fear & Greed index on the same supplier.
+
+  - id: monte-carlo-scenario
+    name: Monte Carlo Scenario Lab
+    family: simulation
+    version: "2.0.0"
+    status: active
+    description: Stochastic inventory paths under geopolitical, logistics, and supplier shocks.
+    inputs: [scenarios, strategies, lead_time_distributions]
+    outputs: [stockout_probability, service_level, recovery_days]
+    latency_ms: 180
+    accuracy_demo: 0.88
+    narrative:
+      headline: "Rolling the dice on shocks — thousands of times, before Monday’s meeting"
+      lede: >
+        Scenario lab fires random draws on lead times, shock severity, and strategy
+        choices (single source, dual source, safety stock). You see the distribution
+        of stockouts and service levels, not a single optimistic number.
+      plain_english: >
+        Monte Carlo means “run many possible futures.” Each path is one plausible
+        quarter under stress; the output is probability of stockout and expected
+        recovery days for each strategy in the matrix.
+      how_it_helps: >
+        Powers the Scenario lab page and justifies dual-source investment with
+        numbers leadership can compare side by side.
+      watch_for: >
+        Strategies where max stockout probability nears certainty, or where dual
+        source barely beats baseline — may need richer lead-time data or new alternates.
+
+  - id: fear-greed-sentiment
+    name: Fear & Greed Sentiment Fusion
+    family: ensemble
+    version: "1.1.0"
+    status: active
+    description: Blends supplier risk, commodity volatility, and news tone into OEM/partner sentiment indices.
+    inputs: [supplier_risk, commodity_risk, news_severity]
+    outputs: [fear_index, greed_index, sentiment_label]
+    latency_ms: 30
+    accuracy_demo: 0.86
+    narrative:
+      headline: "A market-style mood ring for your supply base"
+      lede: >
+        Borrowing from market sentiment gauges, this ensemble fuses supplier risk
+        scores, commodity volatility, and news severity into Fear and Greed indices
+        for Maruti Suzuki and each major partner.
+      plain_english: >
+        High “fear” means the signals skew negative — risk stacking up. Higher “greed”
+        in this demo context reflects calmer conditions and confidence to optimize
+        cost. It is a communication tool as much as a model.
+      how_it_helps: >
+        Executives grasp network mood in one glance on the Fear & Greed page before
+        diving into tables. Sourcing can spot suppliers drifting fearful while others
+        stay neutral.
+      watch_for: >
+        MSIL fear rising while plant twins still show healthy OEE — a sign the
+        worry is upstream — or one supplier far from the pack on fear alone.

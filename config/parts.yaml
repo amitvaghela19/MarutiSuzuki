@@ -1,0 +1,272 @@
+# Automotive parts catalog — demo config (synthetic IDs, public-style naming)
+# primary_supplier_id = incumbent main source; other supplier_ids = approved alternates
+parts:
+  # Braking
+  - id: PART-BRAKE-PAD
+    name: Front & rear brake pad set
+    category: braking
+    vehicle_system: chassis_brakes
+    criticality: 5
+    main_commodity: metals
+    primary_supplier_id: SUP-IN-FRICTION
+    supplier_ids: [SUP-IN-FRICTION, SUP-IN-STEEL, SUP-DE-METALS, SUP-IN-FASTENERS]
+    alternative_solutions:
+      - Variable dual-source with Gujarat stampings for backing plates during friction compound shortages
+      - Pre-build monsoon safety stock at Manesar (10-day cover) for A/B platform pads
+      - Temporary spec waiver to low-metallic compound from ASEAN Tier-1 (homologation fast-track)
+
+  - id: PART-BRAKE-ROTOR
+    name: Ventilated brake rotor (disc)
+    category: braking
+    vehicle_system: chassis_brakes
+    criticality: 5
+    main_commodity: metals
+    primary_supplier_id: SUP-IN-STEEL
+    supplier_ids: [SUP-IN-STEEL, SUP-DE-METALS]
+    alternative_solutions:
+      - Shift 30% volume to Rhine Alloy (Germany) for premium trims when domestic capacity is saturated
+      - Use consolidated rotor SKU across Swift/Dzire to pool MOQ with Tier-1
+
+  - id: PART-BRAKE-CALIPER
+    name: Brake caliper assembly
+    category: braking
+    vehicle_system: chassis_brakes
+    criticality: 4
+    main_commodity: metals
+    primary_supplier_id: SUP-IN-STEEL
+    supplier_ids: [SUP-IN-STEEL, SUP-JP-PARTS]
+    alternative_solutions:
+      - Nagoya Tier-1 precision channel for ABS-integrated calipers on new SUV launches
+      - Localize casting to Haryana stampings partner to cut Japan lead time
+
+  # Powertrain
+  - id: PART-ENGINE-ASSY
+    name: Petrol engine assembly (K-series class)
+    category: powertrain
+    vehicle_system: engine
+    criticality: 5
+    main_commodity: metals
+    primary_supplier_id: SUP-JP-POWERTRAIN
+    supplier_ids: [SUP-JP-POWERTRAIN, SUP-IN-POWERTRAIN, SUP-IN-EXHAUST, SUP-IN-LPG-CNG]
+    alternative_solutions:
+      - Suzuki Japan licensor kits + Bharat Forge India machining for localized content uplift
+      - Emergency CKD pull from Hamamatsu hub if semiconductor-related ECU delays block line-off
+      - CNG variant powertrain pooling with shared block line at Manesar
+
+  - id: PART-TRANSMISSION
+    name: Manual / automatic transmission unit
+    category: powertrain
+    vehicle_system: transmission
+    criticality: 5
+    main_commodity: metals
+    primary_supplier_id: SUP-JP-POWERTRAIN
+    supplier_ids: [SUP-JP-POWERTRAIN, SUP-IN-POWERTRAIN, SUP-IN-CLUTCH, SUP-IN-FORGING]
+    alternative_solutions:
+      - Parallel ramp of AMT module at Indian powertrain JV for automatic mix growth
+      - Swap to manual-only BOM on select trims during AT gear-set allocation crunch
+      - Air-freight critical gear sets (Japan) for launch vehicles only
+
+  - id: PART-FUEL-INJ
+    name: Fuel injection & rail system
+    category: powertrain
+    vehicle_system: engine
+    criticality: 4
+    main_commodity: electronics
+    primary_supplier_id: SUP-IN-ELEC
+    supplier_ids: [SUP-IN-ELEC, SUP-JP-PARTS, SUP-IN-FILTERS]
+    alternative_solutions:
+      - Dual qualify rail and injector from Japan precision supplier for BS-VI+ variants
+      - Dealer-field retrofit kit for rail pressure sensor failures (service stock)
+
+  # Electrical & electronics
+  - id: PART-ECU
+    name: Engine control unit (ECU)
+    category: electrical
+    vehicle_system: powertrain_electronics
+    criticality: 5
+    main_commodity: semiconductors
+    primary_supplier_id: SUP-IN-ELEC
+    supplier_ids: [SUP-IN-ELEC, SUP-JP-PARTS, SUP-KR-SEMI]
+    alternative_solutions:
+      - Korea automotive MCU module as second source for base trims
+      - Software remap to previous-gen ECU when new silicon lot fails validation
+      - Priority allocation pool with Suzuki global for launch nameplates
+
+  - id: PART-BATTERY-12V
+    name: 12V SLI battery (flooded / EFB)
+    category: electrical
+    vehicle_system: electrical
+    criticality: 4
+    main_commodity: batteries
+    primary_supplier_id: SUP-IN-BATTERY
+    supplier_ids: [SUP-IN-BATTERY, SUP-IN-ELEC]
+    alternative_solutions:
+      - Split PO between Amara Raja / Exide-class channels by region (North vs South plants)
+      - EFB upgrade path for start-stop variants without harness change
+      - Aftermarket premium brand swap at service for warranty replacements
+
+  - id: PART-BATTERY-HV
+    name: High-voltage traction battery pack (EV/hybrid)
+    category: electrical
+    vehicle_system: ev_powertrain
+    criticality: 5
+    main_commodity: batteries
+    primary_supplier_id: SUP-IN-BATTERY
+    supplier_ids: [SUP-IN-BATTERY, SUP-KR-SEMI, SUP-IN-EV-HARNESS]
+    alternative_solutions:
+      - Korea cell-module integrator for LFP chemistry pilot on compact EV
+      - PLI-linked local cell plant offtake when domestic gigafactory reaches yield
+      - Reduce pack size / range on fleet orders during cell allocation shortage
+
+  - id: PART-WIRING
+    name: Main wiring harness
+    category: electrical
+    vehicle_system: body_electrical
+    criticality: 4
+    main_commodity: electronics
+    primary_supplier_id: SUP-IN-WIRING
+    supplier_ids: [SUP-IN-WIRING, SUP-IN-ELEC]
+    alternative_solutions:
+      - Pune electronics partner as overflow harness build for export trims
+      - Modular sub-harness kits to repair line stoppage without full loom change
+      - Copper-clad aluminum wire substitution where homologation allows
+
+  - id: PART-INFOTAINMENT
+    name: Infotainment & entertainment head unit
+    category: electrical
+    vehicle_system: cockpit
+    criticality: 4
+    main_commodity: semiconductors
+    primary_supplier_id: SUP-IN-ELEC
+    supplier_ids: [SUP-IN-ELEC, SUP-KR-SEMI, SUP-IN-LIGHTING, SUP-IN-SUNROOF]
+    alternative_solutions:
+      - Korea TFT + SoC stack for connected-car trims; India box build for cost
+      - De-feature to radio-only head unit on entry variants during chip crunch
+      - OTA map updates decoupled from hardware rev to extend field life
+
+  - id: PART-SENSOR-ADAS
+    name: ADAS sensor cluster (camera / radar class)
+    category: electrical
+    vehicle_system: adas
+    criticality: 5
+    main_commodity: semiconductors
+    primary_supplier_id: SUP-JP-PARTS
+    supplier_ids: [SUP-JP-PARTS, SUP-KR-SEMI, SUP-IN-ELEC]
+    alternative_solutions:
+      - Korea radar module second source for Level-1 ADAS on SUVs
+      - Launch without ADAS pack; enable via service campaign when sensors available
+      - Camera-only L1 stack as interim vs radar+camera on top trims
+
+  - id: PART-SENSOR-ENGINE
+    name: Powertrain sensors (O2, MAP, crank)
+    category: electrical
+    vehicle_system: engine
+    criticality: 4
+    main_commodity: semiconductors
+    primary_supplier_id: SUP-IN-ELEC
+    supplier_ids: [SUP-IN-ELEC, SUP-JP-PARTS]
+    alternative_solutions:
+      - Japan sensor lot for launch calibration; India volume for running models
+      - Combined sensor harness SKU to cut connector proliferation
+      - Service exchange program for O2 sensor field failures
+
+  # Chassis & rolling stock
+  - id: PART-TIRE
+    name: OEM tire set (all-season) — MRF / OEM programme
+    category: chassis
+    vehicle_system: wheels_tires
+    criticality: 5
+    main_commodity: rubber
+    primary_supplier_id: SUP-IN-TIRE
+    supplier_ids: [SUP-IN-TIRE, SUP-TH-RUBBER, SUP-MY-RUBBER, SUP-AE-GULF-CHEM, SUP-SA-CARBON]
+    alternative_solutions:
+      - MRF primary on many MSIL lines; CEAT / Apollo-class swap on selected variants
+      - Gulf (UAE / Saudi) synthetic rubber & carbon black — Red Sea routing risk to Chennai plants
+      - Thailand / Malaysia natural rubber corridor alternates when ASEAN lanes delay
+      - Emergency tyre bank at Gurgaon / Manesar for criticality-5 line stoppage
+
+  - id: PART-WHEEL
+    name: Steel / alloy wheel
+    category: chassis
+    vehicle_system: wheels_tires
+    criticality: 3
+    main_commodity: metals
+    primary_supplier_id: SUP-IN-STEEL
+    supplier_ids: [SUP-IN-STEEL, SUP-IN-STAMPING]
+    alternative_solutions:
+      - Haryana stampings for steel wheel; alloy from Gujarat on premium trims
+      - Downgrade to steel wheel on base variant during alloy wheel shortage
+
+  - id: PART-SUSPENSION
+    name: MacPherson strut & suspension links
+    category: chassis
+    vehicle_system: suspension
+    criticality: 4
+    main_commodity: metals
+    primary_supplier_id: SUP-IN-STEEL
+    supplier_ids: [SUP-IN-STEEL, SUP-JP-PARTS, SUP-IN-RIDE, SUP-IN-BEARINGS]
+    alternative_solutions:
+      - Japan Tier-1 tuned damper for new platform ride/handling sign-off
+      - Common strut across B-segment models to improve supplier leverage
+
+  - id: PART-CHASSIS
+    name: Subframe & structural bracket
+    category: chassis
+    vehicle_system: body_structure
+    criticality: 4
+    main_commodity: metals
+    primary_supplier_id: SUP-IN-STEEL
+    supplier_ids: [SUP-IN-STEEL, SUP-DE-METALS]
+    alternative_solutions:
+      - Germany high-strength steel subframe for export crash-norm variants
+      - Hot-stamp localized at Gurgaon press shop to reduce inbound coil dependence
+
+  # Body & comfort
+  - id: PART-DOOR-SEAL
+    name: Door weather seal & trim rubber
+    category: body
+    vehicle_system: body_sealing
+    criticality: 3
+    main_commodity: rubber
+    primary_supplier_id: SUP-TH-RUBBER
+    supplier_ids: [SUP-TH-RUBBER, SUP-MY-RUBBER]
+    alternative_solutions:
+      - Malaysia elastomer plant as ASEAN backup when Thailand floods disrupt moldings
+      - Domestic EPDM compound trial with Indian rubber mixer (12-month qual)
+
+  - id: PART-WIPER
+    name: Wiper blade & linkage assembly
+    category: body
+    vehicle_system: body_glass
+    criticality: 2
+    main_commodity: rubber
+    primary_supplier_id: SUP-IN-STAMPING
+    supplier_ids: [SUP-IN-STAMPING, SUP-TH-RUBBER, SUP-IN-HOSE]
+    alternative_solutions:
+      - Thailand blade rubber import for monsoon SKU; local linkage from Haryana
+      - Aftermarket bundle in service for low-criticality part during shortage
+
+  - id: PART-HVAC
+    name: HVAC blower & climate module
+    category: comfort
+    vehicle_system: thermal
+    criticality: 3
+    main_commodity: electronics
+    primary_supplier_id: SUP-IN-ELEC
+    supplier_ids: [SUP-IN-ELEC, SUP-IN-STAMPING, SUP-IN-AC]
+    alternative_solutions:
+      - Stampings partner builds blower housing; electronics supplies motor driver PCB
+      - Manual window / non-auto HVAC BOM on lowest trim as de-content lever
+
+  - id: PART-INTERIOR
+    name: Instrument panel & interior trim
+    category: comfort
+    vehicle_system: cockpit
+    criticality: 3
+    main_commodity: plastics
+    primary_supplier_id: SUP-IN-STAMPING
+    supplier_ids: [SUP-IN-STAMPING, SUP-IN-WIRING, SUP-IN-SEATING, SUP-IN-PLASTICS]
+    alternative_solutions:
+      - Wiring harness partner co-develops IP carrier for integrated displays
+      - Recycled PP compound switch when virgin plastic price spikes
+      - Simplified two-tone trim on volume models to reduce SKU count

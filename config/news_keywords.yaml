@@ -1,0 +1,33 @@
+rules:
+  - keywords: [strike, port, blockade, embargo]
+    severity: 4
+    risk_type: logistics
+    country_hints: []
+  - keywords: [shortage, scarcity, rationing]
+    severity: 4
+    risk_type: supply
+    country_hints: []
+  - keywords: [earthquake, flood, cyclone, typhoon]
+    severity: 5
+    risk_type: natural_disaster
+    country_hints: []
+  - keywords: [sanction, geopolitical, conflict]
+    severity: 4
+    risk_type: geopolitical
+    country_hints: []
+  - keywords: [rubber, latex, mrf, tyre, tire]
+    severity: 3
+    risk_type: commodity
+    country_hints: [TH, MY, IN]
+  - keywords: [red sea, suez, gulf, middle east, strait, hormuz, petrochemical]
+    severity: 4
+    risk_type: geopolitical
+    country_hints: [AE, SA, OM]
+  - keywords: [synthetic rubber, carbon black, elastomer]
+    severity: 3
+    risk_type: commodity
+    country_hints: [AE, SA]
+  - keywords: [semiconductor, chip, wafer]
+    severity: 3
+    risk_type: commodity
+    country_hints: [JP, TW, KR]

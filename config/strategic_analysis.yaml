@@ -1,0 +1,251 @@
+# SWOT & PESTLE — educational synthesis with public source links (demo)
+sources_note: Click any bullet to open its reference website in a new tab.
+
+maruti_suzuki:
+  swot:
+    strengths:
+      - text: Dominant domestic brand recognition and resale value perception
+        source_url: https://www.marutisuzuki.com/
+        source_label: Maruti Suzuki India
+      - text: Deep dealer and service network across Tier 1–3 cities
+        source_url: https://www.marutisuzuki.com/dealer-locator
+        source_label: Dealer network
+      - text: Cost-competitive small-car platforms shared with Suzuki global architecture
+        source_url: https://www.globalsuzuki.com/
+        source_label: Suzuki Motor Corporation
+      - text: Strong CNG and fuel-efficiency positioning for Indian buyers
+        source_url: https://www.marutisuzuki.com/technology/cng
+        source_label: Maruti Suzuki CNG technology
+      - text: Parent support from Suzuki for product cadence and powertrain know-how
+        source_url: https://www.globalsuzuki.com/corporate/overview/
+        source_label: Suzuki corporate overview
+    weaknesses:
+      - text: Portfolio skew toward entry/mid segments; margin pressure in EV transition
+        source_url: https://www.siam.in/statistics.aspx
+        source_label: SIAM industry statistics
+      - text: Exposure to regulatory shifts (BS-VI, safety norms, CAFE) requiring rapid re-engineering
+        source_url: https://morth.nic.in/
+        source_label: Ministry of Road Transport and Highways
+      - text: Semiconductor and sensor lead times affect infotainment and ADAS launches
+        source_url: https://www.iea.org/reports/global-ev-outlook-2024
+        source_label: IEA Global EV Outlook
+      - text: Capacity concentration in North India increases regional disruption risk
+        source_url: https://www.marutisuzuki.com/corporate/about-us/our-facilities
+        source_label: Maruti manufacturing facilities
+    opportunities:
+      - text: SUV and compact-SUV mix lift average selling price
+        source_url: https://www.siam.in/
+        source_label: SIAM
+      - text: Localized EV/hybrid component ecosystem maturing in India
+        source_url: https://fame2.heavyindustries.gov.in/
+        source_label: FAME II India
+      - text: PLI and Make-in-India incentives for advanced chemistry cells and electronics
+        source_url: https://www.pib.gov.in/
+        source_label: Press Information Bureau (India)
+      - text: Export growth to emerging markets with similar cost structures
+        source_url: https://www.commerce.gov.in/
+        source_label: Ministry of Commerce and Industry
+    threats:
+      - text: Aggressive pricing from Korean and Chinese OEM entrants in SUVs
+        source_url: https://www.siam.in/statistics.aspx
+        source_label: SIAM market data
+      - text: Commodity spikes (steel, aluminum, rubber, cells) compress margins
+        source_url: https://fred.stlouisfed.org/
+        source_label: FRED economic data
+      - text: Geopolitical risk on Japan/ASEAN logistics corridors
+        source_url: https://www.worldbank.org/en/topic/trade
+        source_label: World Bank trade
+      - text: Cyber and software recall risk as vehicles become more connected
+        source_url: https://www.iso.org/standard/70918.html
+        source_label: ISO 21434 (road vehicles cybersecurity)
+
+  pestle:
+    political:
+      - text: FAME II / EV policy and state-level incentives
+        source_url: https://fame2.heavyindustries.gov.in/
+        source_label: FAME II portal
+      - text: Import duties on CKD/SKD kits and components
+        source_url: https://www.cbic.gov.in/
+        source_label: CBIC customs
+      - text: India–Japan CEPA dynamics for auto components
+        source_url: https://www.commerce.gov.in/international-trade/trade-agreements/
+        source_label: India trade agreements
+    economic:
+      - text: RBI rates and consumer credit availability for auto loans
+        source_url: https://www.rbi.org.in/
+        source_label: Reserve Bank of India
+      - text: INR volatility vs JPY for royalty and imported kits
+        source_url: https://www.rbi.org.in/scripts/ReferenceRateArchive.aspx
+        source_label: RBI reference rates
+      - text: Fuel price cycles shifting demand toward CNG/hybrid
+        source_url: https://ppac.gov.in/
+        source_label: Petroleum Planning & Analysis Cell
+    social:
+      - text: Urbanization and first-time buyer growth in smaller cities
+        source_url: https://www.worldbank.org/en/country/india
+        source_label: World Bank India
+      - text: Safety and NCAP awareness influencing purchase decisions
+        source_url: https://www.globalncap.org/
+        source_label: Global NCAP
+      - text: Ride-sharing and used-car markets affecting replacement cycles
+        source_url: https://www.siam.in/
+        source_label: SIAM
+    technological:
+      - text: ADAS sensor fusion and ECU integration complexity
+        source_url: https://www.iso.org/standard/68383.html
+        source_label: ISO 26262 (functional safety)
+      - text: Large touch-screen infotainment and OTA update expectations
+        source_url: https://www.marutisuzuki.com/technology
+        source_label: Maruti Suzuki technology
+      - text: Battery chemistry and thermal management for mild-hybrid/EV
+        source_url: https://www.iea.org/energy-system/transport/electric-vehicles
+        source_label: IEA electric vehicles
+    legal:
+      - text: AIS safety standards, CAFE norms, and homologation lead times
+        source_url: https://morth.nic.in/
+        source_label: MoRTH
+      - text: Supplier liability and recall cost allocation in contracts
+        source_url: https://consumeraffairs.nic.in/
+        source_label: Department of Consumer Affairs
+    environmental:
+      - text: Scope 3 pressure on Tier-1 for recycled materials
+        source_url: https://www.cdp.net/
+        source_label: CDP (climate disclosure)
+      - text: Water and energy use at paint and assembly plants
+        source_url: https://www.marutisuzuki.com/corporate/sustainability
+        source_label: Maruti sustainability
+      - text: End-of-life vehicle rules and scrappage policies
+        source_url: https://morth.nic.in/vehicle-scrapping-policy
+        source_label: Vehicle scrapping policy
+
+partners:
+  - id: PARTNER-SUZUKI-JP
+    name: Suzuki Motor Corporation (Japan)
+    relationship: Parent / platform & powertrain licensor
+    swot_summary:
+      strengths:
+        - text: Global platform sharing, powertrain R&D, scale procurement
+          source_url: https://www.globalsuzuki.com/
+          source_label: Suzuki global
+        - text: Hybrid and electrification technology pipeline
+          source_url: https://www.globalsuzuki.com/sustainability/
+          source_label: Suzuki sustainability
+      weaknesses:
+        - text: Currency exposure, coordination latency with India JV
+          source_url: https://www.rbi.org.in/scripts/ReferenceRateArchive.aspx
+          source_label: RBI FX reference
+      opportunities:
+        - text: EV architecture export, ASEAN manufacturing synergies
+          source_url: https://www.globalsuzuki.com/corporate/overview/
+          source_label: Suzuki corporate
+      threats:
+        - text: Japan disaster risk, chip allocation competition globally
+          source_url: https://www.meti.go.jp/english/
+          source_label: METI Japan
+
+    pestle_highlights:
+      political:
+        - text: Trade agreements Japan–India, royalty structures
+          source_url: https://www.commerce.gov.in/international-trade/trade-agreements/
+          source_label: India trade agreements
+      economic:
+        - text: Yen royalty flows, global commodity contracts
+          source_url: https://www.boj.or.jp/en/
+          source_label: Bank of Japan
+      technological:
+        - text: Hybrid tech transfer, platform electrification
+          source_url: https://www.globalsuzuki.com/technology/
+          source_label: Suzuki technology
+
+  - id: PARTNER-TIER1-IN
+    name: Indian Tier-1 cluster (wiring, interiors, stampings — illustrative)
+    relationship: Domestic localization partners
+    swot_summary:
+      strengths:
+        - text: Local cost, JIT to Haryana/Gujarat plants, engineering talent
+          source_url: https://www.acma.in/
+          source_label: ACMA India
+      weaknesses:
+        - text: Working capital stress, quality variance across sub-tier
+          source_url: https://www.rbi.org.in/scripts/BS_ViewBulletin.aspx
+          source_label: RBI bulletin
+      opportunities:
+        - text: Export component kits, EV thermal and battery enclosures
+          source_url: https://www.pib.gov.in/
+          source_label: PIB India
+      threats:
+        - text: Labor unrest, power tariffs, steel price volatility
+          source_url: https://www.steel.gov.in/
+          source_label: Ministry of Steel
+
+    pestle_highlights:
+      economic:
+        - text: Domestic steel and resin indices
+          source_url: https://fred.stlouisfed.org/
+          source_label: FRED
+      legal:
+        - text: Labor codes, GST on auto components
+          source_url: https://www.gst.gov.in/
+          source_label: GST India
+
+  - id: PARTNER-ASEAN-RUBBER
+    name: ASEAN rubber & tire supply corridor
+    relationship: Tires, seals, mounts
+    swot_summary:
+      strengths:
+        - text: Natural rubber access, established tire OEM relationships
+          source_url: https://www.irsg.info/
+          source_label: International Rubber Study Group
+      weaknesses:
+        - text: Monsoon/logistics disruption, freight rate spikes
+          source_url: https://www.worldbank.org/en/topic/transport
+          source_label: World Bank transport
+      opportunities:
+        - text: Low-rolling-resistance tire demand for CAFE
+          source_url: https://www.siam.in/
+          source_label: SIAM
+      threats:
+        - text: Plantation disease, port congestion, alternate sourcing from EU
+          source_url: https://www.imo.org/
+          source_label: IMO shipping
+
+    pestle_highlights:
+      environmental:
+        - text: Sustainable rubber certification pressure
+          source_url: https://www.fsc.org/
+          source_label: FSC certification
+      political:
+        - text: ASEAN trade lane stability
+          source_url: https://asean.org/
+          source_label: ASEAN
+
+  - id: PARTNER-SEMICON
+    name: Global semiconductor & sensor suppliers
+    relationship: ECU, infotainment, ADAS sensors
+    swot_summary:
+      strengths:
+        - text: Technology leadership, scale on MCUs and sensors
+          source_url: https://www.semiconductor.org/
+          source_label: SIA
+      weaknesses:
+        - text: Allocation queues, long qualification cycles
+          source_url: https://www.iea.org/reports/global-ev-outlook-2024
+          source_label: IEA
+      opportunities:
+        - text: India electronics PLI, local SMT capacity
+          source_url: https://www.pib.gov.in/
+          source_label: PIB
+      threats:
+        - text: Geo-export controls, single-source fab risk
+          source_url: https://www.bis.doc.gov/
+          source_label: U.S. BIS export controls
+
+    pestle_highlights:
+      technological:
+        - text: Node shortages, functional safety ISO 26262
+          source_url: https://www.iso.org/standard/68383.html
+          source_label: ISO 26262
+      political:
+        - text: Export controls on advanced chips
+          source_url: https://www.bis.doc.gov/
+          source_label: BIS

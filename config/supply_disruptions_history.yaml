@@ -1,0 +1,104 @@
+disclaimer: >
+  Educational timeline compiled from publicly reported events and press releases.
+  Not proprietary Maruti Suzuki data. Used to illustrate how supply shocks map to
+  this demo command center.
+
+incidents:
+  - id: MSIL-2011-MANESAR
+    year: 2011
+    title: Manesar labor unrest and production halt
+    category: labor
+    summary: >
+      Repeated strikes at the Manesar plant — and linked tier-2 disputes — stopped
+      vehicle output for extended periods. Gurgaon was also squeezed when component
+      flows from the industrial belt broke down. For Maruti Suzuki, this was an
+      in-plant and domestic tier-2 shock, not an import-route crisis.
+    impact_bullets:
+      - Manesar line halted; Gurgaon output well below normal during peak dispute weeks
+      - Industry reporting cited roughly 75,000 units lost across 2011 strike waves
+      - Tier-2 supplier stoppages amplified the bottleneck beyond a single plant gate
+    supply_chain_lesson: >
+      Dual sourcing and tier-2 visibility matter as much as port logistics — a
+      domestic labor stop can freeze the BOM like a missing container.
+    related_scenario_id: LABOR-UNREST
+    source_label: The Hindu BusinessLine
+    source_url: https://www.thehindubusinessline.com/companies/strike-at-maruti-suzukis-manesar-plant-ends/article23055495.ece
+
+  - id: MSIL-2020-COVID
+    year: 2020
+    title: COVID-19 lockdown — plants and supply chain frozen
+    category: pandemic
+    summary: >
+      India’s nationwide lockdown forced Maruti Suzuki to halt production at Haryana
+      plants from late March 2020. Dealerships closed, suppliers went idle, and
+      restart was slowed by worker movement and inbound part timing. The company’s
+      CFO publicly flagged supply-chain coordination as the hardest part of recovery.
+    impact_bullets:
+      - Production halt from 22 March 2020 at Gurgaon and Manesar
+      - Zero domestic sales reported for April 2020
+      - May 2020 production down roughly 97.5% year-on-year (press reports)
+    supply_chain_lesson: >
+      Resilience planning must cover demand collapse and restart simultaneously —
+      not only raw-material shortages.
+    related_scenario_id: null
+    source_label: Economic Times
+    source_url: https://economictimes.indiatimes.com/industry/auto/auto-news/maruti-suzuki-reports-zero-sales-in-april-due-to-lockdown/articleshow/75484273.cms
+
+  - id: MSIL-2021-CHIP
+    year: 2021
+    title: Global semiconductor shortage cuts output
+    category: commodity
+    summary: >
+      A worldwide chip crunch — worsened by pandemic demand for laptops and phones,
+      and supplier outages including Bosch’s Malaysia facility cited in Indian press —
+      forced Maruti Suzuki to schedule production holidays and run well below capacity
+      at Haryana and Gujarat plants.
+    impact_bullets:
+      - August 2021 partial stoppages on selected dates and lines
+      - September 2021 production down about 51% year-on-year (press)
+      - October 2021 output guided near 60% of normal (MSIL corporate communication)
+    supply_chain_lesson: >
+      Electronics content in every vehicle means chip allocation is a board-level
+      risk — not only a purchasing-office problem.
+    related_scenario_id: CHIP-SHORTAGE
+    source_label: Maruti Suzuki corporate media
+    source_url: https://www.marutisuzuki.com/corporate/media/press-releases/2021/september/impact-on-vehicle-production-in-haryana-and-gujarat
+
+  - id: MSIL-2022-CHIP
+    year: 2022
+    title: Chip crisis lingers into second year
+    category: commodity
+    summary: >
+      The semiconductor shortage did not end in 2021. Maruti Suzuki and peers continued
+      to juggle ECU, sensor, and infotainment allocations through 2022, with leadership
+      commentary in press expecting tight supply for much of the year.
+    impact_bullets:
+      - Continued constrained build schedules versus dealer demand
+      - ECU and sensor-heavy trims most exposed in the BOM
+      - Dual shifts and overtime used selectively when chips arrived in bursts
+    supply_chain_lesson: >
+      Safety stock for electronics and multi-source module designs reduce the
+      pain when the next allocation shock hits.
+    related_scenario_id: CHIP-SHORTAGE
+    source_label: Business Standard (industry coverage)
+    source_url: https://www.business-standard.com/article/automobile/maruti-suzuki-to-slash-output-in-september-by-60-over-chip-shortage-121090100027_1.html
+
+  - id: MSIL-DEMO-GULF-TIRE
+    year: 2026
+    title: "Demo watch: MRF tyres & Gulf / Red Sea feedstock routes"
+    category: geopolitical
+    summary: >
+      Maruti Suzuki fits OEM tyres from Indian manufacturers including MRF on many
+      lines. Those plants rely on imported synthetic rubber and carbon black whose
+      supply chains often run through Gulf petrochemical hubs and Red Sea shipping
+      lanes. This entry is a live demo storyline — run analysis to see simulated impact.
+    impact_bullets:
+      - Configured part PART-TIRE (criticality 5) in this command center demo
+      - Gulf tier-2 suppliers UAE / Saudi feedstock modeled in supplier graph
+      - Scenario “Middle East / Gulf tyre supply shock” stresses rubber commodity paths
+    supply_chain_lesson: >
+      A regional shipping or petrochemical shock can reach Indian assembly lines as
+      longer tyre lead times — even when the brand on the sidewall says MRF.
+    related_scenario_id: ME-GULF-TIRE
+    source_label: Demo POC (synthetic)
+    source_url: https://www.mrftyres.com/

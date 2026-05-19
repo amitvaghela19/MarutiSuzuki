@@ -1,0 +1,321 @@
+# Maruti Suzuki Supply Chain Command Center
+
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![React 18](https://img.shields.io/badge/react-18-61dafb.svg)](https://react.dev/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg)](https://fastapi.tiangolo.com/)
+[![License: Demo](https://img.shields.io/badge/license-demo%20%2F%20educational-lightgrey.svg)](#license)
+
+> **A futuristic command center for automotive supply-chain risk** — one click ingests live macro and news signals, scores 35 suppliers and 21+ critical parts, runs Monte Carlo disruption scenarios, and surfaces AI-style intelligence for Maruti Suzuki India (MSIL).  
+> Built as an **educational demo POC**. All supplier names, allocations, and strategic text are **synthetic** unless cited from public sources.
+
+<p align="center">
+  <strong>Run analysis → Read the orbit → Act on signals</strong>
+</p>
+
+---
+
+## Why this exists
+
+Modern OEM supply chains are not a spreadsheet — they are a **living network** of parts, plants, geopolitics, commodities, and headlines. This project demonstrates how a single “Run analysis” action can fuse:
+
+- **External data** (World Bank, GDELT, RSS, optional FRED)
+- **Multi-criteria supplier ranking** (TOPSIS / MCDM)
+- **Discrete-event simulation** (SimPy scenarios × strategies)
+- **Operational storytelling** (command signals, Fear & Greed, disruption history)
+- **Local AI chat** (Ollama + DeepSeek R1) grounded in the latest snapshot
+
+Perfect for portfolios, supply-chain coursework, or MSIL-themed hackathon demos.
+
+---
+
+## Feature map (at a glance)
+
+| Area | What you get |
+|------|----------------|
+| **Home** | Hero SUV visual, quick navigation, run status |
+| **Command center** | KPIs, prioritized ops signals, news spotlight, risks, recommendations, MRF/Gulf tyre watch |
+| **AI & twin** | Model fleet registry + synthetic digital-twin plant mesh |
+| **Brief & strategy** | MSIL company profile, SWOT/PESTLE with citations, public disruption timeline |
+| **Parts catalog** | BOM-style parts, suppliers, alternates, “Why” drawer |
+| **Suppliers** | Directory (trust tiers, IndiaMART links), sourcing matrix & playbooks |
+| **Fear & Greed** | Heuristic sentiment indices, bulletin cards, full briefing panel |
+| **Scenario lab** | 13 scenarios × 3 strategies, stockout probabilities, matrix view |
+| **Supply-chain chat** | Resizable floating assistant (Ollama) with live news + snapshot context |
+| **Why panel** | TOPSIS ranks and allocation rationale (drawer) |
+
+**Deep dives:** [storytelling.md](storytelling.md) · [website.md](website.md) · [explanation.md](explanation.md) (viva: what/why/where every number comes from)
+
+---
+
+## Architecture (30-second version)
+
+```mermaid
+flowchart LR
+  subgraph UI["React UI (Vite)"]
+    App[App shell + tabs]
+    Snap[Snapshot state]
+  end
+  subgraph API["FastAPI"]
+    Run[POST /api/run-analysis]
+    SnapAPI[GET /api/snapshot/latest]
+    Chat[POST /api/chat]
+  end
+  subgraph Pipeline["Analytics pipeline"]
+    Ingest[World Bank · GDELT · RSS · FRED]
+    Risk[Country · commodity · supplier risk]
+    MCDM[TOPSIS rankings]
+    Sim[SimPy Monte Carlo]
+    Pack[Signals · Fear&Greed · Twin · AI hub]
+  end
+  subgraph Store["Persistence"]
+    Duck[(DuckDB)]
+    JSON[(data/snapshots/latest.json)]
+  end
+  App --> Run
+  Run --> Pipeline
+  Pipeline --> JSON
+  Pipeline --> Duck
+  App --> SnapAPI
+  SnapAPI --> JSON
+  App --> Chat
+  Chat --> Ollama[(Ollama local)]
+```
+
+---
+
+## Tech stack
+
+| Layer | Technology |
+|-------|------------|
+| **Backend** | Python 3.11+, FastAPI, uvicorn, Pydantic |
+| **Analytics** | NumPy, SimPy, rule-based news classifier |
+| **Database** | DuckDB (`data/analytics.duckdb`) |
+| **Frontend** | React 18, TypeScript, Vite |
+| **AI chat** | Ollama (e.g. `deepseek-r1:latest`) — optional, local & free |
+| **Data** | World Bank, GDELT, RSS; optional FRED / NewsData |
+
+---
+
+## Project structure
+
+```
+MarutiSuzuki/
+├── backend/
+│   ├── main.py                 # FastAPI app, CORS, router mount
+│   ├── settings.py             # Paths, API keys, Ollama config
+│   ├── api/routes/             # REST endpoints
+│   │   ├── analysis.py         # POST run-analysis
+│   │   ├── snapshot.py         # GET latest snapshot
+│   │   ├── company.py          # Company, parts, suppliers, scenarios, fear-greed
+│   │   ├── intelligence.py     # AI models, twin, signals, disruption history
+│   │   ├── chat.py             # Ollama streaming chat
+│   │   └── health.py           # Liveness + data-source health
+│   ├── analytics/              # Risk, MCDM, simulation, pipeline, bulletins…
+│   ├── chat/                   # Context builder, live enrichment, Ollama client
+│   ├── ingestion/              # World Bank, GDELT, RSS, FRED orchestration
+│   ├── config/                 # Pydantic models + YAML loader
+│   ├── db/                     # DuckDB migrate + repository
+│   └── tests/                  # pytest suite
+├── frontend/
+│   ├── src/
+│   │   ├── App.tsx             # Shell, nav, global KPIs, tab routing
+│   │   ├── api/client.ts       # Typed API client + Snapshot types
+│   │   ├── pages/              # One file per major view
+│   │   ├── components/         # Reusable UI (chat, gauges, timeline…)
+│   │   ├── utils/              # Countries, supplier URL map
+│   │   └── theme.css           # Design system (dark/light)
+│   └── public/images/          # Hero SUV asset
+├── config/                     # YAML business rules (see below)
+├── data/                       # DuckDB, cache, snapshots (gitignored)
+├── docs/                       # CONFIG_GUIDE, DATA_SOURCES
+├── e2e/                        # Playwright tests
+├── tasks.ps1                   # Windows task runner (install, backend, frontend…)
+├── docker-compose.yml          # Optional container run
+├── README.md                   # You are here
+├── storytelling.md             # Narrative walkthrough of the entire product
+└── website.md                  # Page-by-page UI + architecture reference
+```
+
+---
+
+## Quick start (Windows / PowerShell)
+
+### Prerequisites
+
+- Python **3.11+**
+- Node.js **20+**
+- (Optional) [FRED API key](https://fredaccount.stlouisfed.org/apikeys)
+- (Optional) [Ollama](https://ollama.com/) for the supply-chain chatbot
+
+> **Windows:** Use `.\tasks.ps1` instead of `make`. Run all commands from the **repo root**.
+
+### Install & run
+
+```powershell
+cd e:\Amit\MarutiSuzuki
+.\tasks.ps1 install
+.\tasks.ps1 migrate
+
+# Terminal 1 — API
+.\tasks.ps1 backend
+
+# Terminal 2 — UI
+.\tasks.ps1 frontend
+```
+
+| URL | Service |
+|-----|---------|
+| http://localhost:5173 | React UI |
+| http://127.0.0.1:8000/docs | Swagger API |
+
+Open the UI → click **Run analysis** (first run ~15–30s while caches warm).
+
+### Hero image
+
+Place your Maruti Suzuki SUV photo at:
+
+`frontend/public/images/hero-maruti-suv.webp`
+
+Adjust `frontend/src/components/suvHeroConfig.ts` if you use another filename.
+
+### Environment (optional)
+
+Copy `.env.example` → `.env`:
+
+```env
+API_PORT=8000
+FRED_API_KEY=
+NEWSDATA_API_KEY=
+OLLAMA_BASE_URL=http://127.0.0.1:11434
+OLLAMA_MODEL=deepseek-r1:latest
+CHAT_LIVE_ENRICHMENT_ENABLED=true
+```
+
+### Chatbot setup
+
+```powershell
+ollama pull deepseek-r1
+ollama serve
+```
+
+The floating **💬** button opens a resizable panel; drag the **top-left grip** to resize. Size persists in `localStorage`.
+
+---
+
+## Configuration (`config/`)
+
+| File | Purpose |
+|------|---------|
+| `suppliers.yaml` | 35 suppliers, trust tiers, `reference_url` (MRF, IndiaMART, Gulf, ASEAN…) |
+| `parts.yaml` / `parts_extra.yaml` | Automotive BOM-style parts |
+| `scenarios.yaml` | 13 disruption scenarios for SimPy |
+| `mcdm.yaml` | TOPSIS criteria weights |
+| `thresholds.yaml` | Dual-source / stockout thresholds |
+| `maruti_company.yaml` | MSIL company brief |
+| `strategic_analysis.yaml` | SWOT & PESTLE |
+| `supplier_strategic.yaml` | Per-supplier strategic blurbs |
+| `supply_disruptions_history.yaml` | 2011–2026 public disruption episodes |
+| `data_sources.yaml` | Countries, FRED series, GDELT queries, RSS feeds |
+| `news_keywords.yaml` | News severity taxonomy |
+| `ai_models.yaml` | Demo AI model fleet definitions |
+| `plants.yaml` | Digital-twin plant nodes |
+
+See [docs/CONFIG_GUIDE.md](docs/CONFIG_GUIDE.md) and [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).
+
+---
+
+## API reference
+
+Interactive docs: **http://127.0.0.1:8000/docs**
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `POST` | `/api/run-analysis` | Full pipeline → snapshot JSON |
+| `GET` | `/api/snapshot/latest` | Latest snapshot |
+| `GET` | `/api/health` | Liveness |
+| `GET` | `/api/health/data-sources` | Per-provider ingest status |
+| `GET` | `/api/company/profile` | MSIL company brief |
+| `GET` | `/api/company/strategic` | SWOT / PESTLE |
+| `GET` | `/api/parts/catalog` | Parts by category |
+| `GET` | `/api/parts/catalog/enriched` | Parts + post-run risk overlays |
+| `GET` | `/api/suppliers/catalog` | Supplier directory |
+| `GET` | `/api/suppliers/strategic` | Supplier SWOT snippets |
+| `GET` | `/api/sourcing/matrix` | Sourcing matrix |
+| `GET` | `/api/scenarios/catalog` | Scenario metadata |
+| `GET` | `/api/sentiment/fear-greed` | Fear & Greed indices |
+| `GET` | `/api/ai/models` | AI model fleet |
+| `GET` | `/api/digital-twin/status` | Digital twin mesh |
+| `GET` | `/api/command/signals` | Ops signals (baseline) |
+| `GET` | `/api/disruptions/history` | Disruption timeline |
+| `GET` | `/api/chat/status` | Ollama health |
+| `POST` | `/api/chat` | Streaming chat (SSE) |
+
+---
+
+## Analysis pipeline (what “Run analysis” does)
+
+1. **Ingest** — World Bank macro, GDELT + RSS news (parallel), optional FRED commodities  
+2. **Classify** — Rule-based news severity + risk type + country hints  
+3. **Score risk** — Country, commodity, supplier composite scores  
+4. **Rank** — TOPSIS per part across eligible suppliers  
+5. **Simulate** — SimPy: each scenario × `single_source` / `dual_source` / `multi_source`  
+6. **Recommend** — Allocation % + rationale + alternate solutions  
+7. **Enrich** — Fear & Greed, command signals, AI hub, digital twin, tire brief, disruption history  
+8. **Persist** — `data/snapshots/<run_id>.json` + `latest.json` + DuckDB run record  
+
+---
+
+## Tests & quality
+
+```powershell
+.\tasks.ps1 test          # pytest
+.\tasks.ps1 test-e2e      # Playwright UI flow
+.\tasks.ps1 audit         # pip-audit + npm audit
+.\tasks.ps1 help          # all targets
+```
+
+---
+
+## Troubleshooting (Windows)
+
+| Problem | Fix |
+|---------|-----|
+| `WinError 10013` on port 8000 | `.\tasks.ps1 backend-stop` then `.\tasks.ps1 backend` |
+| Port 5173 stuck | `.\tasks.ps1 frontend-stop` then `.\tasks.ps1 frontend` |
+| Chat says Ollama unreachable | Run `ollama serve` and `ollama pull deepseek-r1` |
+| Empty dashboard | Click **Run analysis** once |
+| Stale data after YAML edits | Re-run analysis |
+
+---
+
+## Docker (optional)
+
+```powershell
+docker compose up --build
+```
+
+---
+
+## Documentation map
+
+| Document | Audience |
+|----------|----------|
+| **README.md** (this file) | GitHub visitors — setup, structure, API |
+| **[storytelling.md](storytelling.md)** | Product narrative — every feature explained as a story |
+| **[website.md](website.md)** | Engineers & designers — per-page components + architecture |
+| **[explanation.md](explanation.md)** | Viva / professor Q&A — codes (IN, AE, TH), lead time, Fear/Greed formulas, number traceability |
+| [docs/CONFIG_GUIDE.md](docs/CONFIG_GUIDE.md) | YAML tuning |
+| [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md) | Ingest providers & cache |
+| [docs/prompt.md](docs/prompt.md) | Reuse prompt to clone this project for another company |
+
+---
+
+## Disclaimer
+
+This repository is for **demonstration and education** only. It is **not** affiliated with, endorsed by, or sourced from Maruti Suzuki India Limited proprietary systems. Supplier names mix illustrative archetypes with public reference links (e.g. MRF Tyres website, IndiaMART categories). Do not use outputs for production sourcing decisions without validation against real ERP and supplier data.
+
+---
+
+## License
+
+Demo / educational use.

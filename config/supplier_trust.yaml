@@ -1,0 +1,15 @@
+# Trust tiers for supplier discovery (demo — not MSIL vendor qualification)
+trust_tiers:
+  oem_tier1:
+    label: OEM Tier-1
+    description: ISO/TS-style Tier-1 profile; parent/JV or long-running OEM programs (demo archetype).
+  acma_cluster:
+    label: ACMA-style cluster
+    description: Indian auto-component cluster (Pune, Chennai, Gurugram, etc.) — trusted industrial density.
+  indiamart_verified:
+    label: IndiaMART category match
+    description: Mapped to a verified IndiaMART OEM supplier category page; due diligence still required.
+
+indiamart_note: >
+  IndiaMART links open public category directories for discovery only. They are not
+  endorsements of individual demo supplier names in this POC.

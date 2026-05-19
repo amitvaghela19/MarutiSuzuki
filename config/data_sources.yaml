@@ -1,0 +1,30 @@
+countries:
+  - { code: IN, name: India }
+  - { code: TH, name: Thailand }
+  - { code: MY, name: Malaysia }
+  - { code: JP, name: Japan }
+  - { code: DE, name: Germany }
+  - { code: KR, name: South Korea }
+worldbank_indicators:
+  - { id: NY.GDP.MKTP.KD.ZG, name: GDP growth }
+  - { id: FP.CPI.TOTL.ZG, name: Inflation }
+  - { id: NE.TRD.GNFS.ZS, name: Trade percent of GDP }
+commodity_series:
+  - { id: rubber, name: Rubber, fred_series: PRUBBUSDM, unit: USD/kg }
+  - { id: metals, name: Industrial metals proxy, fred_series: PPIACO, unit: index }
+  - { id: electronics, name: Electronics PPI, fred_series: PCU3344--3344--, unit: index }
+  - { id: semiconductors, name: Semiconductors proxy, fred_series: PCU3344--3344--, unit: index }
+  - { id: batteries, name: Battery materials proxy, fred_series: PPIACO, unit: index }
+  - { id: plastics, name: Plastics PPI, fred_series: PPIACO, unit: index }
+  - { id: tires, name: Tire input costs proxy, fred_series: PRUBBUSDM, unit: index }
+gdelt_queries:
+  - Maruti Suzuki India supply chain
+  - automotive semiconductor shortage India
+  - tire rubber ASEAN automotive
+  - India passenger vehicle production
+rss_feeds:
+  - https://feeds.bbci.co.uk/news/world/asia/india/rss.xml
+  - https://feeds.bbci.co.uk/news/world/rss.xml
+  - https://news.un.org/feed/subscribe/en/news/all/rss.xml
+  # Automotive / supply-chain (free RSS; also used by chat live enrichment via Google News)
+  - https://www.autocarpro.in/rss

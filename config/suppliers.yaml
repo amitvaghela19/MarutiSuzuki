@@ -1,0 +1,454 @@
+# Demo synthetic suppliers — ecosystem archetypes, NOT proprietary MSIL supplier lists
+# trust_tier: oem_tier1 | acma_cluster | indiamart_verified
+# reference_url: public IndiaMART category pages for trusted discovery (not company endorsements)
+suppliers:
+  # --- ASEAN / global incumbents ---
+  - id: SUP-TH-RUBBER
+    name: Siam Rubber Components (Thailand)
+    country: TH
+    city: Rayong
+    commodities: [rubber]
+    cost_index: 0.92
+    lead_time_days: 21
+    trust_tier: oem_tier1
+    discovery_source: ASEAN OEM rubber corridor
+    reference_url: https://dir.indiamart.com/impcat/natural-rubber.html
+    capability_flags: { iso9001: true, ev_ready: false, tier1: true }
+
+  - id: SUP-MY-RUBBER
+    name: Penang Elastomers (Malaysia)
+    country: MY
+    city: Penang
+    commodities: [rubber]
+    cost_index: 0.95
+    lead_time_days: 18
+    trust_tier: oem_tier1
+    discovery_source: ASEAN Tier-1 elastomers
+    reference_url: https://dir.indiamart.com/impcat/natural-rubber.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  - id: SUP-JP-PARTS
+    name: Nagoya Tier-1 Precision (Japan)
+    country: JP
+    city: Nagoya
+    commodities: [electronics, metals, semiconductors]
+    cost_index: 1.15
+    lead_time_days: 28
+    trust_tier: oem_tier1
+    discovery_source: Suzuki global supply channel
+    reference_url: https://www.globalsuzuki.com/
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  - id: SUP-JP-POWERTRAIN
+    name: Suzuki Powertrain Tech Japan (demo licensor channel)
+    country: JP
+    city: Hamamatsu
+    commodities: [metals, electronics]
+    cost_index: 1.12
+    lead_time_days: 32
+    trust_tier: oem_tier1
+    discovery_source: Parent licensor
+    reference_url: https://www.globalsuzuki.com/
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  - id: SUP-DE-METALS
+    name: Rhine Alloy Stamping (Germany)
+    country: DE
+    city: Stuttgart
+    commodities: [metals]
+    cost_index: 1.08
+    lead_time_days: 35
+    trust_tier: oem_tier1
+    discovery_source: EU premium stamping
+    reference_url: https://www.vda.de/en
+    capability_flags: { iso9001: true, ev_ready: false, tier1: true }
+
+  - id: SUP-KR-SEMI
+    name: Korea Semiconductor Automotive Module (demo)
+    country: KR
+    city: Suwon
+    commodities: [semiconductors, electronics]
+    cost_index: 1.05
+    lead_time_days: 24
+    trust_tier: oem_tier1
+    discovery_source: Global MCU/sensor module
+    reference_url: https://www.samsung.com/semiconductor/
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  # --- Gulf feedstock (tier-2 to Indian tyre OEMs) ---
+  - id: SUP-AE-GULF-CHEM
+    name: Gulf Petrochemical Feedstock (UAE corridor)
+    country: AE
+    city: Abu Dhabi
+    commodities: [rubber, chemicals]
+    cost_index: 1.05
+    lead_time_days: 32
+    trust_tier: oem_tier1
+    discovery_source: Synthetic rubber / carbon black — tier-2 to Indian tyre OEMs
+    reference_url: https://www.adnoc.ae/
+    capability_flags: { iso9001: true, ev_ready: false, tier1: false }
+
+  - id: SUP-SA-CARBON
+    name: Saudi Carbon & Elastomer Supply (demo)
+    country: SA
+    city: Jubail
+    commodities: [rubber, chemicals]
+    cost_index: 1.02
+    lead_time_days: 28
+    trust_tier: oem_tier1
+    discovery_source: Gulf chemical export hub — tyre input chain
+    reference_url: https://www.sabic.com/
+    capability_flags: { iso9001: true, ev_ready: false, tier1: false }
+
+  # --- India Tier-1 / cluster (ACMA-style) ---
+  - id: SUP-IN-TIRE
+    name: MRF Tyres India (OEM contract)
+    country: IN
+    city: Chennai
+    commodities: [rubber, tires]
+    cost_index: 0.90
+    lead_time_days: 10
+    trust_tier: oem_tier1
+    discovery_source: Long-standing MSIL OEM tyre partner class (MRF / CEAT / Apollo)
+    indiamart_category: Tyres & tubes
+    reference_url: https://www.mrftyres.com/
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  - id: SUP-IN-ELEC
+    name: Pune Precision Electronics
+    country: IN
+    city: Pune
+    commodities: [electronics, semiconductors]
+    cost_index: 0.88
+    lead_time_days: 12
+    trust_tier: acma_cluster
+    discovery_source: Pune auto electronics hub
+    indiamart_category: Automobile electronic components
+    reference_url: https://dir.indiamart.com/impcat/automobile-electronic-components.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  - id: SUP-IN-WIRING
+    name: Motherson-style Wiring Harness India (demo)
+    country: IN
+    city: Noida
+    commodities: [electronics, plastics]
+    cost_index: 0.86
+    lead_time_days: 8
+    trust_tier: oem_tier1
+    discovery_source: NCR harness OEM programs
+    indiamart_category: Wiring harness
+    reference_url: https://dir.indiamart.com/impcat/automotive-wiring-harness.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  - id: SUP-IN-POWERTRAIN
+    name: Bharat Forge Powertrain India (demo)
+    country: IN
+    city: Pune
+    commodities: [metals]
+    cost_index: 0.87
+    lead_time_days: 14
+    trust_tier: oem_tier1
+    discovery_source: Forging & powertrain machining
+    indiamart_category: Automotive forgings
+    reference_url: https://dir.indiamart.com/impcat/automotive-forgings.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  - id: SUP-IN-STEEL
+    name: Gujarat Steel Forming
+    country: IN
+    city: Ahmedabad
+    commodities: [metals]
+    cost_index: 0.85
+    lead_time_days: 14
+    trust_tier: acma_cluster
+    discovery_source: Gujarat stamping cluster
+    indiamart_category: Sheet metal automotive parts
+    reference_url: https://dir.indiamart.com/impcat/automobile-sheet-metal-parts.html
+    capability_flags: { iso9001: true, ev_ready: false, tier1: true }
+
+  - id: SUP-IN-STAMPING
+    name: Haryana Stampings & Interiors
+    country: IN
+    city: Gurugram
+    commodities: [metals, plastics]
+    cost_index: 0.84
+    lead_time_days: 7
+    trust_tier: acma_cluster
+    discovery_source: NCR JIT stampings
+    indiamart_category: Automobile components
+    reference_url: https://dir.indiamart.com/impcat/automobile-components.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  - id: SUP-IN-FRICTION
+    name: Brakes India Friction Materials
+    country: IN
+    city: Faridabad
+    commodities: [metals, rubber]
+    cost_index: 0.89
+    lead_time_days: 11
+    trust_tier: oem_tier1
+    discovery_source: NCR friction & brake cluster
+    indiamart_category: Brake parts
+    reference_url: https://dir.indiamart.com/impcat/automotive-brake-parts.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  - id: SUP-IN-BATTERY
+    name: Amara Raja / Exide-class OEM channel (demo)
+    country: IN
+    city: Hyderabad
+    commodities: [batteries, electronics]
+    cost_index: 0.91
+    lead_time_days: 15
+    trust_tier: oem_tier1
+    discovery_source: Established Indian battery OEMs
+    indiamart_category: Car batteries
+    reference_url: https://dir.indiamart.com/impcat/car-batteries.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  # --- IndiaMART-mapped discovery pool (verified category references) ---
+  - id: SUP-IN-GLASS
+    name: Gurugram Automotive Glass & Mirrors (demo)
+    country: IN
+    city: Gurugram
+    commodities: [metals, plastics]
+    cost_index: 0.88
+    lead_time_days: 9
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART automotive glass category
+    indiamart_category: Automotive glass
+    reference_url: https://dir.indiamart.com/impcat/automotive-glass.html
+    capability_flags: { iso9001: true, ev_ready: false, tier1: false }
+
+  - id: SUP-IN-LIGHTING
+    name: Noida LED Automotive Lighting OEM (demo)
+    country: IN
+    city: Noida
+    commodities: [electronics]
+    cost_index: 0.87
+    lead_time_days: 10
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART automotive lights
+    indiamart_category: Automotive lights
+    reference_url: https://dir.indiamart.com/impcat/automotive-lights.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: false }
+
+  - id: SUP-IN-BEARINGS
+    name: Coimbatore Precision Bearings Hub (demo)
+    country: IN
+    city: Coimbatore
+    commodities: [metals]
+    cost_index: 0.86
+    lead_time_days: 12
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART bearings category
+    indiamart_category: Automotive bearings
+    reference_url: https://dir.indiamart.com/impcat/automotive-bearings.html
+    capability_flags: { iso9001: true, ev_ready: false, tier1: false }
+
+  - id: SUP-IN-PLASTICS
+    name: Chennai Injection Moulding Auto Plastics (demo)
+    country: IN
+    city: Chennai
+    commodities: [plastics]
+    cost_index: 0.85
+    lead_time_days: 8
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART plastic auto components
+    indiamart_category: Automotive plastic components
+    reference_url: https://dir.indiamart.com/impcat/automotive-plastic-components.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: false }
+
+  - id: SUP-IN-EXHAUST
+    name: Pune Exhaust & Emission Systems (demo)
+    country: IN
+    city: Pune
+    commodities: [metals]
+    cost_index: 0.88
+    lead_time_days: 11
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART exhaust systems
+    indiamart_category: Exhaust systems
+    reference_url: https://dir.indiamart.com/impcat/automobile-exhaust-system.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: false }
+
+  - id: SUP-IN-FORGING
+    name: Ludhiana Forge & Machining Cluster (demo)
+    country: IN
+    city: Ludhiana
+    commodities: [metals]
+    cost_index: 0.83
+    lead_time_days: 13
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART forgings
+    indiamart_category: Automotive forgings
+    reference_url: https://dir.indiamart.com/impcat/automotive-forgings.html
+    capability_flags: { iso9001: true, ev_ready: false, tier1: false }
+
+  - id: SUP-IN-CASTING
+    name: Sanand Aluminium Die Casting (demo)
+    country: IN
+    city: Sanand
+    commodities: [metals]
+    cost_index: 0.86
+    lead_time_days: 10
+    trust_tier: indiamart_verified
+    discovery_source: Gujarat casting cluster
+    indiamart_category: Die casting automotive
+    reference_url: https://dir.indiamart.com/impcat/die-casting-automotive-parts.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: false }
+
+  - id: SUP-IN-HOSE
+    name: Manesar Fluid Hose & Tube Works (demo)
+    country: IN
+    city: Manesar
+    commodities: [rubber, plastics]
+    cost_index: 0.84
+    lead_time_days: 7
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART rubber parts
+    indiamart_category: Automotive rubber parts
+    reference_url: https://dir.indiamart.com/impcat/automotive-rubber-parts.html
+    capability_flags: { iso9001: true, ev_ready: false, tier1: false }
+
+  - id: SUP-IN-SEATING
+    name: Hosur Seating Foam & Trim (demo)
+    country: IN
+    city: Hosur
+    commodities: [plastics, rubber]
+    cost_index: 0.85
+    lead_time_days: 9
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART seating & interiors
+    indiamart_category: Car seats
+    reference_url: https://dir.indiamart.com/impcat/car-seats.html
+    capability_flags: { iso9001: true, ev_ready: false, tier1: false }
+
+  - id: SUP-IN-AC
+    name: Manesar HVAC & AC Compressor Line (demo)
+    country: IN
+    city: Manesar
+    commodities: [electronics, metals]
+    cost_index: 0.89
+    lead_time_days: 12
+    trust_tier: acma_cluster
+    discovery_source: NCR thermal modules
+    indiamart_category: Car AC parts
+    reference_url: https://dir.indiamart.com/impcat/car-ac-parts.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  - id: SUP-IN-RIDE
+    name: Pune Ride Control & Shock Absorbers (demo)
+    country: IN
+    city: Pune
+    commodities: [metals, rubber]
+    cost_index: 0.88
+    lead_time_days: 11
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART suspension parts
+    indiamart_category: Shock absorbers
+    reference_url: https://dir.indiamart.com/impcat/shock-absorbers.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: false }
+
+  - id: SUP-IN-FILTERS
+    name: Faridabad Filtration & Fluids (demo)
+    country: IN
+    city: Faridabad
+    commodities: [rubber, plastics]
+    cost_index: 0.84
+    lead_time_days: 8
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART filters
+    indiamart_category: Automotive filters
+    reference_url: https://dir.indiamart.com/impcat/automotive-filters.html
+    capability_flags: { iso9001: true, ev_ready: false, tier1: false }
+
+  - id: SUP-IN-CLUTCH
+    name: Aurangabad Clutch & Transmission Parts (demo)
+    country: IN
+    city: Aurangabad
+    commodities: [metals, rubber]
+    cost_index: 0.87
+    lead_time_days: 13
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART clutch parts
+    indiamart_category: Clutch plates
+    reference_url: https://dir.indiamart.com/impcat/clutch-plates.html
+    capability_flags: { iso9001: true, ev_ready: false, tier1: false }
+
+  - id: SUP-IN-FASTENERS
+    name: Ludhiana Automotive Fasteners OEM (demo)
+    country: IN
+    city: Ludhiana
+    commodities: [metals]
+    cost_index: 0.82
+    lead_time_days: 6
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART fasteners
+    indiamart_category: Automotive fasteners
+    reference_url: https://dir.indiamart.com/impcat/automotive-fasteners.html
+    capability_flags: { iso9001: true, ev_ready: false, tier1: false }
+
+  - id: SUP-IN-PAINT
+    name: Bawal Industrial Paint & Coatings OEM (demo)
+    country: IN
+    city: Bawal
+    commodities: [plastics]
+    cost_index: 0.90
+    lead_time_days: 14
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART industrial coatings
+    indiamart_category: Automotive paints
+    reference_url: https://dir.indiamart.com/impcat/automotive-paints.html
+    capability_flags: { iso9001: true, ev_ready: false, tier1: false }
+
+  - id: SUP-IN-EV-HARNESS
+    name: Bengaluru HV EV Harness & Busbar (demo)
+    country: IN
+    city: Bengaluru
+    commodities: [electronics, metals]
+    cost_index: 0.91
+    lead_time_days: 16
+    trust_tier: acma_cluster
+    discovery_source: EV component cluster (Karnataka)
+    indiamart_category: EV components
+    reference_url: https://dir.indiamart.com/search.mp?ss=ev+harness
+    capability_flags: { iso9001: true, ev_ready: true, tier1: true }
+
+  - id: SUP-IN-TOOLING
+    name: Pune Tool & Die OEM Shop (demo)
+    country: IN
+    city: Pune
+    commodities: [metals]
+    cost_index: 0.86
+    lead_time_days: 18
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART dies & moulds
+    indiamart_category: Automobile dies
+    reference_url: https://dir.indiamart.com/impcat/automobile-dies.html
+    capability_flags: { iso9001: true, ev_ready: false, tier1: false }
+
+  - id: SUP-IN-LPG-CNG
+    name: Faridabad CNG Kit & Regulator OEM (demo)
+    country: IN
+    city: Faridabad
+    commodities: [metals, rubber]
+    cost_index: 0.88
+    lead_time_days: 10
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART CNG kits (Maruti CNG relevance)
+    indiamart_category: CNG kits
+    reference_url: https://dir.indiamart.com/impcat/cng-kits.html
+    capability_flags: { iso9001: true, ev_ready: true, tier1: false }
+
+  - id: SUP-IN-SUNROOF
+    name: Pune Sunroof & Body Electronics Module (demo)
+    country: IN
+    city: Pune
+    commodities: [electronics, plastics]
+    cost_index: 0.93
+    lead_time_days: 20
+    trust_tier: indiamart_verified
+    discovery_source: IndiaMART sunroof assemblies
+    indiamart_category: Car sunroof
+    reference_url: https://dir.indiamart.com/search.mp?ss=automotive+sunroof
+    capability_flags: { iso9001: true, ev_ready: true, tier1: false }

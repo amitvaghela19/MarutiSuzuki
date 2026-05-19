@@ -1,0 +1,44 @@
+plants:
+  - id: PLANT-GGN
+    name: Gurgaon Assembly
+    location: IN-GGN
+    parts_used:
+      - PART-TIRE
+      - PART-WHEEL
+      - PART-BRAKE-PAD
+      - PART-BRAKE-ROTOR
+      - PART-ENGINE-ASSY
+      - PART-TRANSMISSION
+      - PART-ECU
+      - PART-BATTERY-12V
+      - PART-WIRING
+      - PART-INFOTAINMENT
+      - PART-SENSOR-ADAS
+      - PART-WIPER
+      - PART-DOOR-SEAL
+      - PART-INTERIOR
+      - PART-HVAC
+  - id: PLANT-MNL
+    name: Manesar Powertrain & Assembly
+    location: IN-MNL
+    parts_used:
+      - PART-ENGINE-ASSY
+      - PART-TRANSMISSION
+      - PART-FUEL-INJ
+      - PART-ECU
+      - PART-SENSOR-ENGINE
+      - PART-BATTERY-HV
+      - PART-CHASSIS
+      - PART-SUSPENSION
+      - PART-BRAKE-CALIPER
+  - id: PLANT-GUJ
+    name: Gujarat Greenfield (demo)
+    location: IN-GUJ
+    parts_used:
+      - PART-TIRE
+      - PART-ENGINE-ASSY
+      - PART-TRANSMISSION
+      - PART-BATTERY-HV
+      - PART-INFOTAINMENT
+      - PART-SENSOR-ADAS
+      - PART-SUSPENSION
